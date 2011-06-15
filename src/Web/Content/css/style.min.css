@@ -13,3 +13,6 @@ nav a{color:#d6caa2;display:block;height:30px;margin:0 10px;text-decoration:none
 #content p{font-size:1.75em;line-height:1.5em;margin:0 0 15px;text-align:justify}
 aside{float:right;font-size:1.4em;line-height:1.65em;padding:10px;text-align:center;width:230px}
 .container{margin:0 auto;min-width:700px;width:50%}
+.clearfix:before,.clearfix:after{content:"";display:block}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}

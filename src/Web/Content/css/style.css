@@ -85,3 +85,13 @@ aside {
   min-width: 700px;
   width: 50%;
 }
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: block;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
