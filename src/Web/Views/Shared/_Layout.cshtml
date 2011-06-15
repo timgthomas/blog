@@ -5,6 +5,8 @@
 <head>
 	<meta charset=utf-8>
 	<title>Tim G. Thomas</title>
+
+	<link rel=stylesheet href='http://fonts.googleapis.com/css?family=Philosopher'>
 	<link rel=stylesheet href='@Url.Content("~/Content/css/style.min.css")'>
 </head>
 
@@ -21,7 +23,12 @@
 		</div>
 	</header>
 	<div class=container id=content>
-		@RenderBody()
+		<section>@RenderBody()</section>
+		<aside>
+			<p>I'm a Central-Texas-based Web developer, graphic designer, and community leader.</p>
+		</aside>
+		<!-- TODO: Replace with CSS-based clear fix -->
+		<br style='clear: both'>
 	</div>
 	<footer class=container>
 		<p>&copy; Tim G. Thomas</p>
