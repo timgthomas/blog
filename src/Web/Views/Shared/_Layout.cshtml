@@ -10,18 +10,20 @@
 
 <body>
 	<header>
-		<h1>Tim G. Thomas</h1>
-		<nav>
-			<ol>
-				<li><a href='@Href("~/")'>Blog</a></li>
-				<li><a href=http://www.timgthomas.com>Portfolio</a></li>
-			</ol>
-		</nav>
+		<div class=container>
+			<h1>Tim G. Thomas</h1>
+			<nav>
+				<ol>
+					<li><a href='@Href("~/")'>Blog</a></li>
+					<li><a href=http://www.timgthomas.com>Portfolio</a></li>
+				</ol>
+			</nav>
+		</div>
 	</header>
-	<div id=content>
+	<div class=container id=content>
 		@RenderBody()
 	</div>
-	<footer>
+	<footer class=container>
 		<p>&copy; Tim G. Thomas</p>
 	</footer>
 </body>

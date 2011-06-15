@@ -1,7 +1,56 @@
 @background: rgb(60, 74, 60);
 @foreground: rgb(214, 202, 162);
 
+/** { box-shadow: inset 0 0 1px #f0f; }*/
+
 body {
 	background-color: @background;
 	color: @foreground;
+	font-size: 62.5%;
+	margin: 0;
+}
+
+header {
+	border-bottom: 2px solid @foreground;
+	height: 40px;
+	padding: 60px 0 0;
+	text-transform: lowercase;
+}
+
+h1 {
+	float: left;
+	font-size: 3.0em;
+	height: 40px;
+	margin: 0;
+	width: 50%;
+}
+
+nav {
+	float: right;
+	font-size: 2.0em;
+	width: 50%;
+}
+
+nav ol {
+	float: right;
+	margin: 0;
+}
+
+nav ol li {
+	float: left;
+	height: 40px;
+	line-height: 50px;
+	list-style-type: none;
+}
+
+nav a {
+	color: @foreground;
+	display: block;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+.container {
+	margin: 0 auto;
+	width: 50%;
 }
