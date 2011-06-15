@@ -1,0 +1,7 @@
+@background: rgb(60, 74, 60);
+@foreground: rgb(214, 202, 162);
+
+body {
+	background-color: @background;
+	color: @foreground;
+}

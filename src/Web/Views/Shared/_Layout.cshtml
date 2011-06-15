@@ -5,10 +5,25 @@
 <head>
 	<meta charset=utf-8>
 	<title>Tim G. Thomas</title>
+	<link rel=stylesheet href='@Url.Content("~/Content/css/style.min.css")'>
 </head>
 
 <body>
-	@RenderBody()
+	<header>
+		<h1>Tim G. Thomas</h1>
+		<nav>
+			<ol>
+				<li><a href='@Href("~/")'>Blog</a></li>
+				<li><a href=http://www.timgthomas.com>Portfolio</a></li>
+			</ol>
+		</nav>
+	</header>
+	<div id=content>
+		@RenderBody()
+	</div>
+	<footer>
+		<p>&copy; Tim G. Thomas</p>
+	</footer>
 </body>
 
 </html>
