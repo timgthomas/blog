@@ -1,12 +1,15 @@
-*{box-shadow:inset 0 0 1px #769076}
+*{box-shadow:inset 0 0 1px #475847}
+.title-font{font-family:'Philosopher',Arial,Serif}
 *{margin:0;padding:0}
-body{background-color:#3c4a3c;color:#d6caa2;font-size:62.5%;margin:0}
-header{border-bottom:2px solid #d6caa2;font-family:'Philosopher',Arial,Serif;height:30px;padding:50px 0 0;letter-spacing:.2em;text-shadow:0 2px 0 #3c4a3c;text-transform:lowercase}
-h1{float:left;font-size:3.0em;height:30px;margin:0}
+body{background-color:#515b51;color:#d6caa2;font-family:Garamond;font-size:62.5%;margin:0}
+header{font-family:'Philosopher',Arial,Serif;background-color:#3c4a3c;border-bottom:2px solid #d6caa2;height:30px;margin:0 0 10px;padding:50px 0 0;letter-spacing:.2em;text-shadow:0 2px 0 #3c4a3c;text-transform:lowercase}
+header h1{float:left;font-size:3.0em;height:30px;margin:0}
 nav{float:right;font-size:2.0em}
 nav ol{float:right;margin:0}
 nav ol li{float:left;list-style-type:none}
 nav a{color:#d6caa2;display:block;height:30px;margin:0 10px;text-decoration:none}
-#content section{float:left}
-#content aside{float:right;font-size:1.4em;line-height:1.65em;padding:10px;text-align:center;width:230px}
-.container{margin:0 auto;min-width:600px;width:50%}
+#content{margin-right:250px}
+#content h1{font-family:'Philosopher',Arial,Serif;font-size:2.0em;margin:0 0 10px;text-align:right;text-transform:lowercase}
+#content p{font-size:1.75em;line-height:1.5em;margin:0 0 15px;text-align:justify}
+aside{float:right;font-size:1.4em;line-height:1.65em;padding:10px;text-align:center;width:230px}
+.container{margin:0 auto;min-width:700px;width:50%}

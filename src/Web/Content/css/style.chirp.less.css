@@ -1,7 +1,12 @@
 @background: rgb(60, 74, 60);
 @foreground: rgb(214, 202, 162);
 
-* { box-shadow: inset 0 0 1px lightness(@background, 25%); }
+* { box-shadow: inset 0 0 1px lightness(@background, 5%); }
+
+/* Mixins */
+.title-font {
+	font-family: 'Philosopher', Arial, Serif;
+}
 
 * {
 	margin: 0;
@@ -9,8 +14,9 @@
 }
 
 body {
-	background-color: @background;
+	background-color: saturation(lightness(@background, 7.5%), -5%);
 	color: @foreground;
+	font-family: Garamond;
 	font-size: 62.5%;
 	margin: 0;
 }
@@ -18,16 +24,19 @@ body {
 /* Header */
 
 header {
+	.title-font();
+	
+	background-color: @background;
 	border-bottom: 2px solid @foreground;
-	font-family: 'Philosopher', Arial, Serif;
 	height: 30px;
+	margin: 0 0 10px;
 	padding: 50px 0 0;
 	letter-spacing: 0.2em;
 	text-shadow: 0 2px 0 @background;
 	text-transform: lowercase;
 }
 
-h1 {
+header h1 {
 	float: left;
 	font-size: 3.0em;
 	height: 30px;
@@ -61,11 +70,27 @@ nav a {
 
 /* Content */
 
-#content section {
-	float: left;
+#content {
+	margin-right: 250px;
 }
 
-#content aside {
+#content h1 {
+	.title-font();
+	
+	font-size: 2.0em;
+	margin: 0 0 10px;
+	text-align: right;
+	text-transform: lowercase;
+}
+
+#content p {
+	font-size: 1.75em;
+	line-height: 1.5em;
+	margin: 0 0 15px;
+	text-align: justify;
+}
+
+aside {
 	float: right;
 	font-size: 1.4em;
 	line-height: 1.4em * 1.18;
@@ -78,6 +103,6 @@ nav a {
 
 .container {
 	margin: 0 auto;
-	min-width: 600px;
+	min-width: 700px;
 	width: 50%;
 }
