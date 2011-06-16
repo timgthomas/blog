@@ -72,6 +72,9 @@
     <Content Include="Content\css\style.min.css">
       <DependentUpon>style.chirp.less.css</DependentUpon>
     </Content>
+    <Content Include="Content\img\icons\github.png" />
+    <Content Include="Content\img\icons\linkedin.png" />
+    <Content Include="Content\img\icons\twitter.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />

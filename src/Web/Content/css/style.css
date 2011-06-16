@@ -1,6 +1,4 @@
-* {
-  box-shadow: inset 0 0 1px #475847;
-}
+/* { box-shadow: inset 0 0 1px lightness(@background, 5%); }*/
 /* Mixins */
 .title-font {
   font-family: 'Philosopher', Arial, Serif;
@@ -38,6 +36,7 @@ header h1 {
 nav {
   float: right;
   font-size: 2.0em;
+  margin: 10px 0 0;
 }
 nav ol {
   float: right;
@@ -60,9 +59,10 @@ nav a {
 }
 #content h1 {
   font-family: 'Philosopher', Arial, Serif;
+  border-bottom: 2px solid #d6caa2;
   font-size: 2.0em;
   margin: 0 0 10px;
-  text-align: right;
+  text-shadow: 0 2px 0 #3c4a3c;
   text-transform: lowercase;
 }
 #content p {
@@ -71,13 +71,68 @@ nav a {
   margin: 0 0 15px;
   text-align: justify;
 }
+/* Sidebar */
 aside {
   float: right;
   font-size: 1.4em;
   line-height: 1.65em;
-  padding: 10px;
-  text-align: center;
   width: 230px;
+}
+aside h1 {
+  font-family: 'Philosopher', Arial, Serif;
+  border-bottom: 2px solid #d6caa2;
+  font-size: 1.25em;
+  text-transform: lowercase;
+}
+aside p {
+  text-align: center;
+}
+aside #find-me-on {
+  list-style-type: none;
+  margin: 0 auto;
+  width: 160px;
+}
+aside #find-me-on li a {
+  background-position: 8px center;
+  background-repeat: no-repeat;
+  border: 1px solid #5d685d;
+  border-radius: 4px;
+  color: #d6caa2;
+  display: block;
+  font-size: 1.125em;
+  line-height: 28px;
+  margin: 5px 0;
+  padding: 2px 4px 2px 40px;
+  text-decoration: none;
+}
+aside #find-me-on li a:hover {
+  background-color: #5d685d;
+}
+aside #find-me-on .twitter {
+  background-image: url('../img/icons/twitter.png');
+}
+aside #find-me-on .linkedin {
+  background-image: url('../img/icons/linkedin.png');
+}
+aside #find-me-on .github {
+  background-image: url('../img/icons/github.png');
+}
+aside #find-me-on .forrst {
+  background-image: url('../img/icons/forrst.png');
+}
+/* Footer */
+footer p {
+  color: #7c8a7c;
+  font-size: 1.5em;
+  text-align: center;
+}
+footer a {
+  border-bottom: 1px dotted #7c8a7c;
+  color: #7c8a7c;
+  text-decoration: none;
+}
+footer a:hover {
+  border-bottom-style: solid;
 }
 /* Generic */
 .container {

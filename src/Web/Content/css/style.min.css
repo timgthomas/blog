@@ -1,17 +1,28 @@
-*{box-shadow:inset 0 0 1px #475847}
 .title-font{font-family:'Philosopher',Arial,Serif}
 *{margin:0;padding:0}
 body{background-color:#515b51;color:#d6caa2;font-family:Garamond;font-size:62.5%;margin:0}
 header{font-family:'Philosopher',Arial,Serif;background-color:#3c4a3c;border-bottom:2px solid #d6caa2;height:30px;margin:0 0 10px;padding:50px 0 0;letter-spacing:.2em;text-shadow:0 2px 0 #3c4a3c;text-transform:lowercase}
 header h1{float:left;font-size:3.0em;height:30px;margin:0}
-nav{float:right;font-size:2.0em}
+nav{float:right;font-size:2.0em;margin:10px 0 0}
 nav ol{float:right;margin:0}
 nav ol li{float:left;list-style-type:none}
 nav a{color:#d6caa2;display:block;height:30px;margin:0 10px;text-decoration:none}
 #content{margin-right:250px}
-#content h1{font-family:'Philosopher',Arial,Serif;font-size:2.0em;margin:0 0 10px;text-align:right;text-transform:lowercase}
+#content h1{font-family:'Philosopher',Arial,Serif;border-bottom:2px solid #d6caa2;font-size:2.0em;margin:0 0 10px;text-shadow:0 2px 0 #3c4a3c;text-transform:lowercase}
 #content p{font-size:1.75em;line-height:1.5em;margin:0 0 15px;text-align:justify}
-aside{float:right;font-size:1.4em;line-height:1.65em;padding:10px;text-align:center;width:230px}
+aside{float:right;font-size:1.4em;line-height:1.65em;width:230px}
+aside h1{font-family:'Philosopher',Arial,Serif;border-bottom:2px solid #d6caa2;font-size:1.25em;text-transform:lowercase}
+aside p{text-align:center}
+aside #find-me-on{list-style-type:none;margin:0 auto;width:160px}
+aside #find-me-on li a{background-position:8px center;background-repeat:no-repeat;border:1px solid #5d685d;border-radius:4px;color:#d6caa2;display:block;font-size:1.125em;line-height:28px;margin:5px 0;padding:2px 4px 2px 40px;text-decoration:none}
+aside #find-me-on li a:hover{background-color:#5d685d}
+aside #find-me-on .twitter{background-image:url('../img/icons/twitter.png')}
+aside #find-me-on .linkedin{background-image:url('../img/icons/linkedin.png')}
+aside #find-me-on .github{background-image:url('../img/icons/github.png')}
+aside #find-me-on .forrst{background-image:url('../img/icons/forrst.png')}
+footer p{color:#7c8a7c;font-size:1.5em;text-align:center}
+footer a{border-bottom:1px dotted #7c8a7c;color:#7c8a7c;text-decoration:none}
+footer a:hover{border-bottom-style:solid}
 .container{margin:0 auto;min-width:700px;width:50%}
 .clearfix:before,.clearfix:after{content:"";display:block}
 .clearfix:after{clear:both}

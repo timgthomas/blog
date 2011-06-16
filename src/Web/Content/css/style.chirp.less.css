@@ -1,7 +1,9 @@
 @background: rgb(60, 74, 60);
+@midground: saturation(lightness(@background, 7.5%), -5%);
+	@midground-highlight: lightness(@midground, 5%);
 @foreground: rgb(214, 202, 162);
 
-* { box-shadow: inset 0 0 1px lightness(@background, 5%); }
+/* { box-shadow: inset 0 0 1px lightness(@background, 5%); }*/
 
 /* Mixins */
 .title-font {
@@ -14,7 +16,7 @@
 }
 
 body {
-	background-color: saturation(lightness(@background, 7.5%), -5%);
+	background-color: @midground;
 	color: @foreground;
 	font-family: Garamond;
 	font-size: 62.5%;
@@ -48,6 +50,7 @@ header h1 {
 nav {
 	float: right;
 	font-size: 2.0em;
+	margin: 10px 0 0;
 }
 
 nav ol {
@@ -77,9 +80,10 @@ nav a {
 #content h1 {
 	.title-font();
 	
+	border-bottom: 2px solid @foreground;
 	font-size: 2.0em;
 	margin: 0 0 10px;
-	text-align: right;
+	text-shadow: 0 2px 0 @background;
 	text-transform: lowercase;
 }
 
@@ -90,13 +94,75 @@ nav a {
 	text-align: justify;
 }
 
+/* Sidebar */
+
 aside {
 	float: right;
 	font-size: 1.4em;
 	line-height: 1.4em * 1.18;
-	padding: 10px;
-	text-align: center;
 	width: 230px;
+}
+
+aside h1 {
+	.title-font();
+	
+	border-bottom: 2px solid @foreground;
+	font-size: 1.25em;
+	text-transform: lowercase;
+}
+
+aside p {
+	text-align: center;
+}
+
+aside #find-me-on {
+	list-style-type: none;
+	margin: 0 auto;
+	width: 160px;
+}
+
+aside #find-me-on li {
+	a {
+		background-position: 8px center;
+		background-repeat: no-repeat;
+		border: 1px solid @midground-highlight;
+		border-radius: 4px;
+		color: @foreground;
+		display: block;
+		font-size: 1.125em;
+		line-height: 28px;
+		margin: 5px 0;
+		padding: 2px 4px 2px 40px;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		background-color: @midground-highlight;
+	}
+}
+
+aside #find-me-on .twitter { background-image: url('../img/icons/twitter.png'); }
+aside #find-me-on .linkedin { background-image: url('../img/icons/linkedin.png'); }
+aside #find-me-on .github { background-image: url('../img/icons/github.png'); }
+aside #find-me-on .forrst { background-image: url('../img/icons/forrst.png'); }
+
+/* Footer */
+
+@footer-foreground: saturation(lightness(@background, 25%), -5%);
+
+footer p {
+	color: @footer-foreground;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+footer a {
+	border-bottom: 1px dotted @footer-foreground;
+	color: @footer-foreground;
+	text-decoration: none;
+}
+footer a:hover {
+	border-bottom-style: solid;
 }
 
 /* Generic */
