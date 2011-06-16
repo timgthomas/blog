@@ -87,12 +87,12 @@ aside h1 {
 aside p {
   text-align: center;
 }
-aside #find-me-on {
+aside ul {
   list-style-type: none;
   margin: 0 auto;
   width: 160px;
 }
-aside #find-me-on li a {
+aside ul li a {
   background-position: 8px center;
   background-repeat: no-repeat;
   border: 1px solid #5d685d;
@@ -105,19 +105,19 @@ aside #find-me-on li a {
   padding: 2px 4px 2px 40px;
   text-decoration: none;
 }
-aside #find-me-on li a:hover {
+aside ul li a:hover {
   background-color: #5d685d;
 }
-aside #find-me-on .twitter {
+aside ul .twitter {
   background-image: url('../img/icons/twitter.png');
 }
-aside #find-me-on .linkedin {
+aside ul .linkedin {
   background-image: url('../img/icons/linkedin.png');
 }
-aside #find-me-on .github {
+aside ul .github {
   background-image: url('../img/icons/github.png');
 }
-aside #find-me-on .forrst {
+aside ul .forrst {
   background-image: url('../img/icons/forrst.png');
 }
 /* Footer */

@@ -115,13 +115,13 @@ aside p {
 	text-align: center;
 }
 
-aside #find-me-on {
+aside ul {
 	list-style-type: none;
 	margin: 0 auto;
 	width: 160px;
 }
 
-aside #find-me-on li {
+aside ul li {
 	a {
 		background-position: 8px center;
 		background-repeat: no-repeat;
@@ -141,10 +141,10 @@ aside #find-me-on li {
 	}
 }
 
-aside #find-me-on .twitter { background-image: url('../img/icons/twitter.png'); }
-aside #find-me-on .linkedin { background-image: url('../img/icons/linkedin.png'); }
-aside #find-me-on .github { background-image: url('../img/icons/github.png'); }
-aside #find-me-on .forrst { background-image: url('../img/icons/forrst.png'); }
+aside ul .twitter { background-image: url('../img/icons/twitter.png'); }
+aside ul .linkedin { background-image: url('../img/icons/linkedin.png'); }
+aside ul .github { background-image: url('../img/icons/github.png'); }
+aside ul .forrst { background-image: url('../img/icons/forrst.png'); }
 
 /* Footer */
 

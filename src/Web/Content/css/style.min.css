@@ -13,13 +13,13 @@ nav a{color:#d6caa2;display:block;height:30px;margin:0 10px;text-decoration:none
 aside{float:right;font-size:1.4em;line-height:1.65em;width:230px}
 aside h1{font-family:'Philosopher',Arial,Serif;border-bottom:2px solid #d6caa2;font-size:1.25em;text-transform:lowercase}
 aside p{text-align:center}
-aside #find-me-on{list-style-type:none;margin:0 auto;width:160px}
-aside #find-me-on li a{background-position:8px center;background-repeat:no-repeat;border:1px solid #5d685d;border-radius:4px;color:#d6caa2;display:block;font-size:1.125em;line-height:28px;margin:5px 0;padding:2px 4px 2px 40px;text-decoration:none}
-aside #find-me-on li a:hover{background-color:#5d685d}
-aside #find-me-on .twitter{background-image:url('../img/icons/twitter.png')}
-aside #find-me-on .linkedin{background-image:url('../img/icons/linkedin.png')}
-aside #find-me-on .github{background-image:url('../img/icons/github.png')}
-aside #find-me-on .forrst{background-image:url('../img/icons/forrst.png')}
+aside ul{list-style-type:none;margin:0 auto;width:160px}
+aside ul li a{background-position:8px center;background-repeat:no-repeat;border:1px solid #5d685d;border-radius:4px;color:#d6caa2;display:block;font-size:1.125em;line-height:28px;margin:5px 0;padding:2px 4px 2px 40px;text-decoration:none}
+aside ul li a:hover{background-color:#5d685d}
+aside ul .twitter{background-image:url('../img/icons/twitter.png')}
+aside ul .linkedin{background-image:url('../img/icons/linkedin.png')}
+aside ul .github{background-image:url('../img/icons/github.png')}
+aside ul .forrst{background-image:url('../img/icons/forrst.png')}
 footer p{color:#7c8a7c;font-size:1.5em;text-align:center}
 footer a{border-bottom:1px dotted #7c8a7c;color:#7c8a7c;text-decoration:none}
 footer a:hover{border-bottom-style:solid}
