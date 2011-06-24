@@ -1,0 +1,59 @@
+/* Pretty printing styles. Used with prettify.js. */
+
+/* SPAN elements with the classes below are added by prettyprint. */
+.pln { color: rgb(230, 222, 184); }  /* plain text */
+
+@media screen {
+  .str { color: rgb(106, 128, 140); }  /* string content */
+  .kwd { color: rgb(179, 165, 125); }  /* a keyword */
+  .com { color: rgb(97, 99, 102); }  /* a comment */
+  .typ { color: rgb(115, 141, 79); }  /* a type name */
+  .lit { color: rgb(106, 128, 140); }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun, .opn, .clo { /*color: #660*/ }
+  .tag { color: rgb(115, 141, 79); }  /* a markup tag name */
+  .atn { /*color: #606*/ }  /* a markup attribute name */
+  .atv { color: rgb(106, 128, 140); }  /* a markup attribute value */
+  .dec, .var { color: rgb(115, 141, 79); }  /* a declaration; a variable name */
+  .fun { color: red }  /* a function name */
+}
+
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str { color: #060 }
+  .kwd { color: #006; font-weight: bold }
+  .com { color: #600; font-style: italic }
+  .typ { color: #404; font-weight: bold }
+  .lit { color: #044 }
+  .pun, .opn, .clo { color: #440 }
+  .tag { color: #006; font-weight: bold }
+  .atn { color: #404 }
+  .atv { color: #060 }
+}
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint {
+	background-color: rgb(21, 23, 25);
+	/*border: 1px solid #888;*/
+	border-radius: 3px;
+	font: normal 1.75em 'Courier New';
+	margin: 0 0 15px;
+	padding: 6px 12px;
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin: 0; } /* IE indents via margin-left */
+/*li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 { list-style-type: none }*/
+/* Alternate shading for lines */
+/*li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 { background: #eee }*/
