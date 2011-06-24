@@ -15,7 +15,7 @@ body {
   margin: 0;
 }
 /* Header */
-header {
+body > header {
   font-family: 'Philosopher', Arial, Serif;
   background-color: #3c4a3c;
   border-bottom: 2px solid #d6caa2;
@@ -26,7 +26,7 @@ header {
   text-shadow: 0 2px 0 #3c4a3c;
   text-transform: lowercase;
 }
-header h1 {
+body > header h1 {
   float: left;
   font-size: 3.0em;
   height: 30px;
@@ -57,19 +57,30 @@ nav a {
 #content {
   margin-right: 250px;
 }
-#content h1 {
-  font-family: 'Philosopher', Arial, Serif;
-  border-bottom: 2px solid #d6caa2;
-  font-size: 2.0em;
-  margin: 0 0 10px;
-  text-shadow: 0 2px 0 #3c4a3c;
-  text-transform: lowercase;
-}
 #content p {
   font-size: 1.75em;
   line-height: 1.5em;
   margin: 0 0 15px;
   text-align: justify;
+}
+/* Content : Posts */
+.post {
+  list-style-type: none;
+}
+.post > header {
+  font-family: 'Philosopher', Arial, Serif;
+  border-bottom: 2px solid #d6caa2;
+  height: 20px;
+  margin: 0 0 10px;
+  text-shadow: 0 2px 0 #515b51;
+  text-transform: lowercase;
+}
+.post > header h1 {
+  float: left;
+  font-size: 2.0em;
+}
+.post > header h2 {
+  float: right;
 }
 /* Sidebar */
 aside {
