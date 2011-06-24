@@ -7,9 +7,11 @@
 	<li class=post>
 		<header>
 			<h1>@post.Title</h1>
-			<h2>Posted on @post.Posted</h2>
 		</header>
 		@Html.Raw(post.Body)
+		<footer>
+			<p>Posted on @post.Posted | 0 comments</p>
+		</footer>
 	</li>
 }
 </ul>

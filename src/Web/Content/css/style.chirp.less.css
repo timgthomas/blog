@@ -87,6 +87,7 @@ nav a {
 /* Content : Posts */
 .post {
 	list-style-type: none;
+	margin-bottom: 30px;
 }
 
 .post > header {
@@ -105,6 +106,11 @@ nav a {
 	h2 {
 		float: right;
 	}
+}
+
+.post > footer {
+	border-top: 2px solid @foreground;
+	font-size: 0.75em;
 }
 
 /* Sidebar */
@@ -163,18 +169,18 @@ aside ul .forrst { background-image: url('../img/icons/forrst.png'); }
 
 @footer-foreground: saturation(lightness(@background, 25%), -5%);
 
-footer p {
+body > footer p {
 	color: @footer-foreground;
 	font-size: 1.5em;
 	text-align: center;
 }
 
-footer a {
+body > footer a {
 	border-bottom: 1px dotted @footer-foreground;
 	color: @footer-foreground;
 	text-decoration: none;
 }
-footer a:hover {
+body > footer a:hover {
 	border-bottom-style: solid;
 }
 

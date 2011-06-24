@@ -66,6 +66,7 @@ nav a {
 /* Content : Posts */
 .post {
   list-style-type: none;
+  margin-bottom: 30px;
 }
 .post > header {
   font-family: 'Philosopher', Arial, Serif;
@@ -81,6 +82,10 @@ nav a {
 }
 .post > header h2 {
   float: right;
+}
+.post > footer {
+  border-top: 2px solid #d6caa2;
+  font-size: 0.75em;
 }
 /* Sidebar */
 aside {
@@ -132,17 +137,17 @@ aside ul .forrst {
   background-image: url('../img/icons/forrst.png');
 }
 /* Footer */
-footer p {
+body > footer p {
   color: #7c8a7c;
   font-size: 1.5em;
   text-align: center;
 }
-footer a {
+body > footer a {
   border-bottom: 1px dotted #7c8a7c;
   color: #7c8a7c;
   text-decoration: none;
 }
-footer a:hover {
+body > footer a:hover {
   border-bottom-style: solid;
 }
 /* Generic */
