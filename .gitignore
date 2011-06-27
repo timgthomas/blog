@@ -3,5 +3,6 @@
 _ReSharper*
 
 *.docstates
+*.ReSharper
 *.suo
 *.user

@@ -36,9 +36,12 @@ pre.prettyprint {
 	background-color: rgb(21, 23, 25);
 	/*border: 1px solid #888;*/
 	border-radius: 3px;
-	font: normal 1.75em 'Courier New';
+	font-size: 1.75em;
 	margin: 0 0 15px;
 	padding: 6px 12px;
+}
+pre.prettyprint span {
+	font-family: 'Bitstream Vera Sans Mono', Monaco, Consolas, 'Courier New';
 }
 
 /* Specify class=linenums on a pre to get line numbering */

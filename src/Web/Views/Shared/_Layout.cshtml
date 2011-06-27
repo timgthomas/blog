@@ -8,12 +8,10 @@
 
 	<link rel=stylesheet href='http://fonts.googleapis.com/css?family=Philosopher'>
 	<link rel=stylesheet href='@Url.Content("~/Content/css/style.min.css")'>
-
 	<link rel=stylesheet href='@Url.Content("~/Content/css/prettify.css")'>
-	<script src='@Url.Content("~/Content/js/prettify.js")'></script>
 </head>
 
-<body onload="prettyPrint()">
+<body>
 	<header>
 		<div class=container>
 			<h1>Tim G. Thomas</h1>
@@ -41,8 +39,13 @@
 	<footer class=container>
 		<p>&copy; Tim G. Thomas | This blog is <a href=https://github.com/TimGThomas/blog target=_blank>open-source</a>!</p>
 	</footer>
+	<script src=https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js></script>
+	<script src='@Url.Content("~/Content/js/prettify.js")'></script>
 	<script>
-		SyntaxHighlighter.all()
+		(function($) {
+			$('pre').addClass('prettyprint');
+			prettyPrint();
+		})(jQuery);
 	</script>
 </body>
 
