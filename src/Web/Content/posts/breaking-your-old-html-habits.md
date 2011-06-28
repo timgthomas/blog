@@ -142,7 +142,7 @@ the HTML page and, at the very end, load all of the JavaScript-ey goodness:
 	</html>
 
 However, scripts that need to modify your browser's behavior or content can
-sometimes cause what Web developers call a ["Flash of Unstyled Content"](http://www.bluerobot.com/web/css/fouc.asp/).
+sometimes cause what Web developers call a ["Flash of Unstyled Content"][1].
 Likely the most well-known scripts that are in this category are those that add
 support for HTML 5 elements in older browsers.  What's that?  Don't tell me I
 haven't yet talked about--
@@ -154,9 +154,9 @@ While HTML 5's markup is designed to (mostly) behave like previous versions,
 older browsers like Internet Explorer 7 don't like seeing the new elements--such
 as `<header>` and `<nav>`--and will ignore putting styles on them.  To get
 around this issue, we can use "HTML 5 shims" to trick these browsers into
-knowing about these elements.  Two of the most well-known are Modernizr, which
+knowing about these elements.  Two of the most well-known are [Modernizr][2], which
 also helps you check for supported browser features like geolocation, and the
-HTML 5 Shim, which _only_ adds support for the new elements.  If you're using
+[HTML 5 Shim][3], which _only_ adds support for the new elements.  If you're using
 either one of these scripts, it's okay (and recommended!) to stick them inside
 your page's `<head>` tag:
 
@@ -227,3 +227,7 @@ but we've leveraged some new HTML 5 features to make our markup more
 _meaningful_, which has positive implications like improving search engines'
 ability to crawl your site, helping visually-impaired users view your site with
 screen readers, and making your friendly Web developer coworkers happy. :)
+
+[1]: http://www.bluerobot.com/web/css/fouc.asp/
+[2]: http://www.modernizr.com/
+[3]: http://code.google.com/p/html5shim/

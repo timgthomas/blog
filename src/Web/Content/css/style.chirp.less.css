@@ -8,6 +8,7 @@
 /* Mixins */
 .title-font {
 	font-family: 'Philosopher', Arial, Serif;
+	text-transform: lowercase;
 }
 
 * {
@@ -35,7 +36,6 @@ body > header {
 	padding: 50px 0 0;
 	letter-spacing: 0.2em;
 	text-shadow: 0 2px 0 @background;
-	text-transform: lowercase;
 }
 
 body > header h1 {
@@ -90,6 +90,13 @@ nav a {
 	margin-bottom: 30px;
 }
 
+.post a {
+	color: lightness(@foreground, -12.5%);
+}
+.post a:hover {
+	color: lightness(@foreground, 12.5%);
+}
+
 .post > header {
 	.title-font();
 	
@@ -97,7 +104,6 @@ nav a {
 	height: 20px;
 	margin: 0 0 10px;
 	text-shadow: 0 2px 0 @midground;
-	text-transform: lowercase;
 	
 	h1 {
 		float: left;
@@ -106,6 +112,14 @@ nav a {
 	h2 {
 		float: right;
 	}
+}
+
+.post > h1 {
+	.title-font();
+	
+	border-bottom: 1px solid @foreground;
+	font-size: 1.6em;
+	margin: 0 0 5px;
 }
 
 .post > footer {
@@ -127,7 +141,6 @@ aside h1 {
 	
 	border-bottom: 2px solid @foreground;
 	font-size: 1.25em;
-	text-transform: lowercase;
 }
 
 aside p {
