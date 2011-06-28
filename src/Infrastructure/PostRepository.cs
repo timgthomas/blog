@@ -24,8 +24,8 @@ namespace Infrastructure
 		{
 			yield return Transform(new Post
 				{
-					Title = "A Sample Post",
-					Slug = "a-sample-post",
+					Title = "Breaking Your Old HTML Habits",
+					Slug = "breaking-your-old-html-habits",
 					Posted = DateTime.Now
 				});
 
