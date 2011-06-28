@@ -6,15 +6,11 @@ namespace Blog.Web.Controllers
 {
 	public class SiteController : Controller
 	{
-		private readonly IPostRepository _posts;
-
-		public SiteController()
-		{
-			_posts = new PostRepository();
-		}
+		private IPostRepository _posts;
 
 		public ViewResult Index()
 		{
+			_posts = new PostRepository(HttpContext.Server.MapPath("~/Content/posts"));
 			return View(_posts.GetAll());
 		}
 	}
