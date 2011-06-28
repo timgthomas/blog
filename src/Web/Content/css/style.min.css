@@ -18,7 +18,8 @@ aside{float:right;font-size:1.4em;line-height:1.65em;width:230px}
 aside h1{font-family:'Philosopher',Arial,Serif;border-bottom:2px solid #d6caa2;font-size:1.25em;text-transform:lowercase}
 aside p{text-align:center}
 aside ul{list-style-type:none;margin:0 auto;width:160px}
-aside ul li a{background-position:8px center;background-repeat:no-repeat;border:1px solid #5d685d;border-radius:4px;color:#d6caa2;display:block;font-size:1.125em;line-height:28px;margin:5px 0;padding:2px 4px 2px 40px;text-decoration:none}
+aside ul li{float:left}
+aside ul li a{background-position:center center;background-repeat:no-repeat;border:1px solid #5d685d;border-radius:4px;color:#d6caa2;display:block;font-size:1.125em;height:28px;margin:5px 5px 0 0;padding:2px;text-decoration:none;width:28px}
 aside ul li a:hover{background-color:#5d685d}
 aside ul .twitter{background-image:url('../img/icons/twitter.png')}
 aside ul .linkedin{background-image:url('../img/icons/linkedin.png')}

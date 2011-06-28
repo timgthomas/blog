@@ -141,18 +141,21 @@ aside ul {
 }
 
 aside ul li {
+	float: left;
+	
 	a {
-		background-position: 8px center;
+		background-position: center center;
 		background-repeat: no-repeat;
 		border: 1px solid @midground-highlight;
 		border-radius: 4px;
 		color: @foreground;
 		display: block;
 		font-size: 1.125em;
-		line-height: 28px;
-		margin: 5px 0;
-		padding: 2px 4px 2px 40px;
+		height: 28px;
+		margin: 5px 5px 0 0;
+		padding: 2px;
 		text-decoration: none;
+		width: 28px;
 	}
 	
 	a:hover {
