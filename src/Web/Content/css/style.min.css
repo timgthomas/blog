@@ -9,13 +9,13 @@ nav ol li{float:left;list-style-type:none}
 nav a{color:#d6caa2;display:block;height:30px;margin:0 10px;text-decoration:none}
 #content{margin-right:250px}
 #content p{font-size:1.75em;line-height:1.5em;margin:0 0 15px;text-align:justify}
-.post{list-style-type:none;margin-bottom:30px}
-.post a{color:#c2b176}
-.post a:hover{color:#eae3ce}
+#content a{color:#c2b176}
+#content a:hover{color:#eae3ce}
 #content header{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:2px solid #d6caa2;height:20px;margin:0 0 10px;text-shadow:0 2px 0 #515b51}
 #content header h1{float:left;font-size:2.0em}
 #content header h2{float:right}
-.post>h1{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:1px solid #d6caa2;font-size:1.6em;margin:0 0 5px}
+.post{list-style-type:none;margin-bottom:30px}
+.post header a{text-decoration:none}
 .post>footer{border-top:2px solid #d6caa2;font-size:.75em}
 aside{float:right;font-size:1.4em;line-height:1.65em;width:230px}
 aside h1{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:2px solid #d6caa2;font-size:1.25em}
@@ -35,3 +35,5 @@ body>footer a:hover{border-bottom-style:solid}
 .clearfix:before,.clearfix:after{content:"";display:block}
 .clearfix:after{clear:both}
 .clearfix{zoom:1}
+#disqus_thread{font-size:1.5em}
+#disqus_thread h3{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:2px solid #d6caa2}

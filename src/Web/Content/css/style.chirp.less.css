@@ -84,18 +84,8 @@ nav a {
 	text-align: justify;
 }
 
-/* Content : Posts */
-.post {
-	list-style-type: none;
-	margin-bottom: 30px;
-}
-
-.post a {
-	color: lightness(@foreground, -12.5%);
-}
-.post a:hover {
-	color: lightness(@foreground, 12.5%);
-}
+#content a { color: lightness(@foreground, -12.5%); }
+#content a:hover { color: lightness(@foreground, 12.5%); }
 
 #content header {
 	.title-font();
@@ -114,12 +104,14 @@ nav a {
 	}
 }
 
-.post > h1 {
-	.title-font();
-	
-	border-bottom: 1px solid @foreground;
-	font-size: 1.6em;
-	margin: 0 0 5px;
+/* Content : Posts */
+.post {
+	list-style-type: none;
+	margin-bottom: 30px;
+}
+
+.post header a {
+	text-decoration: none;
 }
 
 .post > footer {
@@ -218,4 +210,16 @@ body > footer a:hover {
 }
 .clearfix {
 	zoom: 1;
+}
+
+/* Plugins/Miscellaneous */
+
+#disqus_thread {
+	font-size: 1.5em;
+}
+
+#disqus_thread h3 {
+	.title-font();
+	
+	border-bottom: 2px solid @foreground;
 }

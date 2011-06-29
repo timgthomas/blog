@@ -64,15 +64,10 @@ nav a {
   margin: 0 0 15px;
   text-align: justify;
 }
-/* Content : Posts */
-.post {
-  list-style-type: none;
-  margin-bottom: 30px;
-}
-.post a {
+#content a {
   color: #c2b176;
 }
-.post a:hover {
+#content a:hover {
   color: #eae3ce;
 }
 #content header {
@@ -90,12 +85,13 @@ nav a {
 #content header h2 {
   float: right;
 }
-.post > h1 {
-  font-family: 'Philosopher', Arial, Serif;
-  text-transform: lowercase;
-  border-bottom: 1px solid #d6caa2;
-  font-size: 1.6em;
-  margin: 0 0 5px;
+/* Content : Posts */
+.post {
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+.post header a {
+  text-decoration: none;
 }
 .post > footer {
   border-top: 2px solid #d6caa2;
@@ -183,4 +179,13 @@ body > footer a:hover {
 }
 .clearfix {
   zoom: 1;
+}
+/* Plugins/Miscellaneous */
+#disqus_thread {
+  font-size: 1.5em;
+}
+#disqus_thread h3 {
+  font-family: 'Philosopher', Arial, Serif;
+  text-transform: lowercase;
+  border-bottom: 2px solid #d6caa2;
 }

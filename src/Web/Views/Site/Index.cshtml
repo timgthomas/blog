@@ -10,8 +10,18 @@
 		</header>
 		@Html.Raw(post.Body)
 		<footer>
-			<p>Posted on @post.Posted | 0 comments</p>
+			<p>Posted on @post.Posted | <a href='@Url.Action("Post", new { slug = post.Slug })#disqus_thread' data-disqus-identifier='@post.Slug'>Retrieving comments...</a></p>
 		</footer>
 	</li>
 }
 </ul>
+
+<script>
+	var disqus_shortname = 'timgthomas';
+	(function () {
+		var s = document.createElement('script'); s.async = true;
+		s.type = 'text/javascript';
+		s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+		(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+	} ());
+</script>
