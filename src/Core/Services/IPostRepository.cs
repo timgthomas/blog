@@ -6,5 +6,6 @@ namespace Blog.Core.Services
 	public interface IPostRepository
 	{
 		IEnumerable<Post> GetAll();
+		Post GetBySlug(string slug);
 	}
 }

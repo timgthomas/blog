@@ -4,6 +4,7 @@ using System.IO;
 using Blog.Core.Models;
 using Blog.Core.Services;
 using MarkdownSharp;
+using System.Linq;
 
 namespace Infrastructure
 {
@@ -35,6 +36,11 @@ namespace Infrastructure
 					Slug = "a-blog-post-of-some-interest",
 					Posted = DateTime.Now
 				});
+		}
+
+		public Post GetBySlug(string slug)
+		{
+			return GetAll().SingleOrDefault(p => string.Equals(p.Slug, slug));
 		}
 
 		private Post Transform(Post post)

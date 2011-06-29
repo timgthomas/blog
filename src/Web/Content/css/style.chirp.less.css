@@ -97,7 +97,7 @@ nav a {
 	color: lightness(@foreground, 12.5%);
 }
 
-.post > header {
+#content header {
 	.title-font();
 	
 	border-bottom: 2px solid @foreground;

@@ -8,10 +8,19 @@ namespace Blog.Web.Controllers
 	{
 		private IPostRepository _posts;
 
+		private IPostRepository Posts
+		{
+			get { return _posts ?? (_posts = new PostRepository(HttpContext.Server.MapPath("~/Content/posts"))); }
+		}
+
 		public ViewResult Index()
 		{
-			_posts = new PostRepository(HttpContext.Server.MapPath("~/Content/posts"));
-			return View(_posts.GetAll());
+			return View(Posts.GetAll());
+		}
+
+		public ViewResult Post(string slug)
+		{
+			return View(Posts.GetBySlug(slug));
 		}
 	}
 }
