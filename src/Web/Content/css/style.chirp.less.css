@@ -45,6 +45,11 @@ body > header h1 {
 	margin: 0;
 }
 
+body > header a {
+	color: @foreground;
+	text-decoration: none;
+}
+
 /* Header : Navigation */
 
 nav {
@@ -64,11 +69,9 @@ nav ol li {
 }
 
 nav a {
-	color: @foreground;
 	display: block;
 	height: 30px;
 	margin: 0 10px;
-	text-decoration: none;
 }
 
 /* Content */
@@ -110,7 +113,7 @@ nav a {
 	margin-bottom: 30px;
 }
 
-.post header a {
+.post header h1 a {
 	text-decoration: none;
 }
 

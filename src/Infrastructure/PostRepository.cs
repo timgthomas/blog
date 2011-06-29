@@ -23,24 +23,29 @@ namespace Infrastructure
 
 		public IEnumerable<Post> GetAll()
 		{
-			yield return Transform(new Post
-				{
-					Title = "Breaking Your Old HTML Habits",
-					Slug = "breaking-your-old-html-habits",
-					Posted = DateTime.Now
-				});
-
-			yield return Transform(new Post
-				{
-					Title = "A Blog Post of Some Interest",
-					Slug = "a-blog-post-of-some-interest",
-					Posted = DateTime.Now
-				});
+			return GetStubPosts().OrderByDescending(p => p.Posted);
 		}
 
 		public Post GetBySlug(string slug)
 		{
-			return GetAll().SingleOrDefault(p => string.Equals(p.Slug, slug));
+			return GetStubPosts().SingleOrDefault(p => string.Equals(p.Slug, slug));
+		}
+
+		private IEnumerable<Post> GetStubPosts()
+		{
+			yield return Transform(new Post
+			{
+				Title = "A Blog Post of Some Interest",
+				Slug = "a-blog-post-of-some-interest",
+				Posted = DateTime.Now
+			});
+
+			yield return Transform(new Post
+			{
+				Title = "Breaking Your Old HTML Habits",
+				Slug = "breaking-your-old-html-habits",
+				Posted = DateTime.Now.AddDays(-1)
+			});
 		}
 
 		private Post Transform(Post post)
