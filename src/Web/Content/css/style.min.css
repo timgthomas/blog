@@ -24,8 +24,8 @@ nav a{display:block;height:30px;margin:0 10px}
 .post>h1{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:1px solid #d6caa2;font-size:1.75em;margin:0 0 5px}
 .post>footer{border-top:2px solid #d6caa2;font-size:.75em}
 aside{float:right;font-size:1.4em;line-height:1.65em;width:230px}
-aside h1{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:2px solid #d6caa2;font-size:1.25em}
-aside p{text-align:center}
+aside h1{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:2px solid #d6caa2;font-size:1.25em;margin:10px 0 0}
+aside p{font-size:1.125em;text-align:justify}
 aside ul{list-style-type:none;margin:0 auto;width:160px}
 aside ul li{float:left}
 aside ul li a{background-position:center center;background-repeat:no-repeat;border:1px solid #5d685d;border-radius:4px;color:#d6caa2;display:block;font-size:1.125em;height:28px;margin:5px 5px 0 0;padding:2px;text-decoration:none;width:28px}

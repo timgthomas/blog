@@ -144,9 +144,11 @@ aside h1 {
   text-transform: lowercase;
   border-bottom: 2px solid #d6caa2;
   font-size: 1.25em;
+  margin: 10px 0 0;
 }
 aside p {
-  text-align: center;
+  font-size: 1.125em;
+  text-align: justify;
 }
 aside ul {
   list-style-type: none;

@@ -184,10 +184,12 @@ aside h1 {
 	
 	border-bottom: 2px solid @foreground;
 	font-size: 1.25em;
+	margin: 10px 0 0;
 }
 
 aside p {
-	text-align: center;
+	font-size: 1.125em;
+	text-align: justify;
 }
 
 aside ul {
