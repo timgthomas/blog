@@ -35,13 +35,6 @@ namespace Infrastructure
 		{
 			yield return Transform(new Post
 			{
-				Title = "A Blog Post of Some Interest",
-				Slug = "a-blog-post-of-some-interest",
-				Posted = DateTime.Now
-			});
-
-			yield return Transform(new Post
-			{
 				Title = "Breaking Your Old HTML Habits",
 				Slug = "breaking-your-old-html-habits",
 				Posted = DateTime.Now.AddDays(-1)

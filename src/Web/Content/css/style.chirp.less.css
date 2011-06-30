@@ -2,6 +2,7 @@
 @midground: saturation(lightness(@background, 7.5%), -5%);
 	@midground-highlight: lightness(@midground, 5%);
 @foreground: rgb(214, 202, 162);
+	@foreground-highlight: lightness(@foreground, 12.5%);
 
 /* { box-shadow: inset 0 0 1px lightness(@background, 5%); }*/
 
@@ -14,6 +15,21 @@
 * {
 	margin: 0;
 	padding: 0;
+}
+
+a {
+	-moz-transition-property: background-color, color;
+	-moz-transition-duration: 0.25s;
+	
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: 0.25s;
+}
+a:hover {
+	-moz-transition-property: background-color, color;
+	-moz-transition-duration: 0.25s;
+	
+	-webkit-transition-property: background-color, color;
+	-webkit-transition-duration: 0.25s;
 }
 
 body {
@@ -48,6 +64,10 @@ body > header h1 {
 body > header a {
 	color: @foreground;
 	text-decoration: none;
+}
+
+body > header a:hover {
+	color: @foreground-highlight;
 }
 
 /* Header : Navigation */
@@ -87,8 +107,24 @@ nav a {
 	text-align: justify;
 }
 
-#content a { color: lightness(@foreground, -12.5%); }
-#content a:hover { color: lightness(@foreground, 12.5%); }
+#content a {
+	color: lightness(@foreground, -12.5%);
+
+	-moz-transition-property: color;
+	-moz-transition-duration: 0.25s;
+	
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 0.25s;
+}
+#content a:hover {
+	color: @foreground-highlight;
+	
+	-moz-transition-property: color;
+	-moz-transition-duration: 0.25s;
+	
+	-webkit-transition-property: color;
+	-webkit-transition-duration: 0.25s;
+}
 
 #content header {
 	.title-font();
@@ -101,6 +137,10 @@ nav a {
 	h1 {
 		float: left;
 		font-size: 2.0em;
+		
+		a {
+			color: @foreground;
+		}
 	}
 	h2 {
 		float: right;
@@ -115,6 +155,14 @@ nav a {
 
 .post header h1 a {
 	text-decoration: none;
+}
+
+.post > h1 {
+	.title-font();
+	
+	border-bottom: 1px solid @foreground;
+	font-size: 1.75em;
+	margin: 0 0 5px;
 }
 
 .post > footer {
@@ -199,8 +247,8 @@ body > footer a:hover {
 
 .container {
 	margin: 0 auto;
-	min-width: 700px;
-	width: 50%;
+	min-width: 800px;
+	width: 55%;
 }
 
 .clearfix:before,

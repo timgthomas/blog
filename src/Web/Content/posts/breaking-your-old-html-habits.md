@@ -9,7 +9,8 @@ showing off to my friends.
 The Problem.
 ============
 
-First, let's take a look at a typical HTML page I might have written several years ago:
+First, let's take a look at a typical HTML page I might have written several
+years ago:
 
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -63,15 +64,15 @@ HTML 5 document type), we can clean up some other parts, too, like self-closing
 tags and that odd "xmlns" attribute:
 
 	<html>
-
 	<head>
 		<meta http-equiv="content-type" content="text/html;charset=UTF-8">
 		<title>My Yucky Site</title>
 		<link rel="stylesheet" href="style.css" type="text/css">
-		<script type="text/javascript"></script>
+		<script type="text/javascript">
+			/* A smattering of JavaScript. */
+		</script>
 	</head>
 	<!-- Our document's body -->
-
 	</html>
 
 HTML 5 also allows us to use a much-improved shorthand for specifying the
@@ -83,12 +84,17 @@ character set of a document...
 "text/javascript" for script files and "text/css" for style sheets.  Here's what
 our cleaner `<head>` looks like now:
 
+	<html>
 	<head>
 		<meta charset="utf-8">
 		<title>My Slightly-Less-Yucky Site</title>
 		<link rel="stylesheet" href="style.css">
-		<script></script>
+		<script>
+			/* A smattering of JavaScript. */
+		</script>
 	</head>
+	<!-- Our document's body -->
+	</html>
 
 The Body.
 =========
@@ -125,20 +131,18 @@ So far, we've focused on cleaning up the structure of our Web page, but what
 about its behavior (in other words, "JavaScript")?  You'll notice our "yucky"
 version's scripts are inside the `<head>` tag, but that can cause some nasty
 side-effects, specifically that all of the scripts therein have to be loaded
-before the browser will show it to the user.
+before the browser will show any content to the user.
 
-An temptingly easy way to fix this (and one that works for most scripts) is to
+A temptingly easy way to fix this (and one that works for most scripts) is to
 put all of our scripts _after_ the rest of the HTML content.  Browsers will load
 the HTML page and, at the very end, load all of the JavaScript-ey goodness:
 
 	<html>
-
 	<head><!-- Our document's head --></head>
 	<body>
 		<!-- Our document's body -->
 		<script>/* Our script! */</script>
 	</body>
-
 	</html>
 
 However, scripts that need to modify your browser's behavior or content can
@@ -154,14 +158,13 @@ While HTML 5's markup is designed to (mostly) behave like previous versions,
 older browsers like Internet Explorer 7 don't like seeing the new elements--such
 as `<header>` and `<nav>`--and will ignore putting styles on them.  To get
 around this issue, we can use "HTML 5 shims" to trick these browsers into
-knowing about these elements.  Two of the most well-known are [Modernizr][2], which
-also helps you check for supported browser features like geolocation, and the
-[HTML 5 Shim][3], which _only_ adds support for the new elements.  If you're using
-either one of these scripts, it's okay (and recommended!) to stick them inside
-your page's `<head>` tag:
+knowing about these elements.  Two of the most well-known are [Modernizr][2],
+which also helps you check for supported browser features like geolocation, and
+the [HTML 5 Shim][3], which _only_ adds support for the new elements.  If you're
+using either one of these scripts, it's okay (and recommended!) to stick them
+inside your page's `<head>` tag:
 
 	<html>
-	
 	<head>
 		<!-- Other heady stuff -->
 		<script src="js/modernizr.js"></script>
@@ -171,7 +174,6 @@ your page's `<head>` tag:
 		<!-- Other scripts -->
 		<script></script>
 	</body>
-
 	</html>
 
 Wrapping Up.
@@ -225,7 +227,7 @@ here's our crummy older version:
 Not only have we removed a lot of noise (making the HTML much easier to read),
 but we've leveraged some new HTML 5 features to make our markup more
 _meaningful_, which has positive implications like improving search engines'
-ability to crawl your site, helping visually-impaired users view your site with
+ability to crawl your site, helping visually impaired users view your site with
 screen readers, and making your friendly Web developer coworkers happy. :)
 
 [1]: http://www.bluerobot.com/web/css/fouc.asp/

@@ -8,6 +8,18 @@
   margin: 0;
   padding: 0;
 }
+a {
+  -moz-transition-property: background-color, color;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: 0.25s;
+}
+a:hover {
+  -moz-transition-property: background-color, color;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-property: background-color, color;
+  -webkit-transition-duration: 0.25s;
+}
 body {
   background-color: #515b51;
   color: #d6caa2;
@@ -36,6 +48,9 @@ body > header h1 {
 body > header a {
   color: #d6caa2;
   text-decoration: none;
+}
+body > header a:hover {
+  color: #eae3ce;
 }
 /* Header : Navigation */
 nav {
@@ -68,9 +83,17 @@ nav a {
 }
 #content a {
   color: #c2b176;
+  -moz-transition-property: color;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.25s;
 }
 #content a:hover {
   color: #eae3ce;
+  -moz-transition-property: color;
+  -moz-transition-duration: 0.25s;
+  -webkit-transition-property: color;
+  -webkit-transition-duration: 0.25s;
 }
 #content header {
   font-family: 'Philosopher', Arial, Serif;
@@ -84,6 +107,9 @@ nav a {
   float: left;
   font-size: 2.0em;
 }
+#content header h1 a {
+  color: #d6caa2;
+}
 #content header h2 {
   float: right;
 }
@@ -94,6 +120,13 @@ nav a {
 }
 .post header h1 a {
   text-decoration: none;
+}
+.post > h1 {
+  font-family: 'Philosopher', Arial, Serif;
+  text-transform: lowercase;
+  border-bottom: 1px solid #d6caa2;
+  font-size: 1.75em;
+  margin: 0 0 5px;
 }
 .post > footer {
   border-top: 2px solid #d6caa2;
@@ -169,8 +202,8 @@ body > footer a:hover {
 /* Generic */
 .container {
   margin: 0 auto;
-  min-width: 700px;
-  width: 50%;
+  min-width: 800px;
+  width: 55%;
 }
 .clearfix:before, .clearfix:after {
   content: "";
