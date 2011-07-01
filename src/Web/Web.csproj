@@ -66,6 +66,7 @@
     <Content Include="Content\img\icons\github.png" />
     <Content Include="Content\img\icons\linkedin.png" />
     <Content Include="Content\img\icons\twitter.png" />
+    <Content Include="Content\img\photo.jpg" />
     <Content Include="Content\js\prettify.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
