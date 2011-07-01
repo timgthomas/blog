@@ -47,6 +47,10 @@ pre.prettyprint span {
 	font-family: 'Bitstream Vera Sans Mono', Monaco, Consolas, 'Courier New';
 }
 
+.ie pre.prettyprint {
+	font-size: 15px;
+}
+
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums { margin: 0; } /* IE indents via margin-left */
 /*li.L0,

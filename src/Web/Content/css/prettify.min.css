@@ -1,0 +1,25 @@
+.pln{color:#e6deb8}
+@media screen{.str{color:#6a808c}
+.kwd{color:#b3a57d}
+.com{color:#616366}
+.typ{color:#738d4f}
+.lit{color:#6a808c}
+.tag{color:#738d4f}
+.atv{color:#6a808c}
+.dec,.var{color:#738d4f}
+.fun{color:red}
+}
+@media print,projection{.str{color:#060}
+.kwd{color:#006;font-weight:bold}
+.com{color:#600;font-style:italic}
+.typ{color:#404;font-weight:bold}
+.lit{color:#044}
+.pun,.opn,.clo{color:#440}
+.tag{color:#006;font-weight:bold}
+.atn{color:#404}
+.atv{color:#060}
+}
+pre.prettyprint{background-color:#151719;border-radius:3px;box-shadow:inset 0 1px 6px #000;font-size:1.85em;font-size:.95rem;margin:0 15px 15px;overflow-x:auto;padding:10px;text-shadow:0 1px 3px #000}
+pre.prettyprint span{font-family:'Bitstream Vera Sans Mono',Monaco,Consolas,'Courier New'}
+.ie pre.prettyprint{font-size:15px}
+ol.linenums{margin:0}

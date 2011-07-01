@@ -54,7 +54,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\prettify.css" />
+    <Content Include="Content\css\prettify.chirp.css" />
+    <Content Include="Content\css\prettify.min.css">
+      <DependentUpon>prettify.chirp.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\reset.chirp.css" />
+    <Content Include="Content\css\reset.min.css">
+      <DependentUpon>reset.chirp.css</DependentUpon>
+    </Content>
     <Content Include="Content\css\style.chirp.less.css" />
     <Content Include="Content\css\style.css">
       <DependentUpon>style.chirp.less.css</DependentUpon>
@@ -67,7 +74,11 @@
     <Content Include="Content\img\icons\linkedin.png" />
     <Content Include="Content\img\icons\twitter.png" />
     <Content Include="Content\img\photo.jpg" />
-    <Content Include="Content\js\prettify.js" />
+    <Content Include="Content\js\html5.min.js" />
+    <Content Include="Content\js\prettify.chirp.js" />
+    <Content Include="Content\js\prettify.min.js">
+      <DependentUpon>prettify.chirp.js</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />

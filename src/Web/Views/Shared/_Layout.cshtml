@@ -1,14 +1,18 @@
 ﻿<!doctype html>
 
-<html>
+<!--[if (lte IE 8)]> <html class="ie" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
 
 <head>
 	<meta charset=utf-8>
 	<title>Tim G. Thomas</title>
 
 	<link rel=stylesheet href='http://fonts.googleapis.com/css?family=Philosopher'>
+	<link rel=stylesheet href='@Url.Content("~/Content/css/reset.min.css")'>
 	<link rel=stylesheet href='@Url.Content("~/Content/css/style.min.css")'>
-	<link rel=stylesheet href='@Url.Content("~/Content/css/prettify.css")'>
+	<link rel=stylesheet href='@Url.Content("~/Content/css/prettify.min.css")'>
+
+	<script src='@Url.Content("~/Content/js/html5.min.js")'></script>
 </head>
 
 <body>
@@ -25,8 +29,7 @@
 	</header>
 	<div class='container clearfix'>
 		<aside>
-			<!--<img src='@Url.Content("~/Content/img/photo.jpg")' alt='Tim G. Thomas' width=180 />-->
-			<div class=photo></div>
+			<div class=photo>A photo of me, Tim G. Thomas</div>
 			<p>I'm a Central Texas&ndash;based Web developer, graphic designer, and community leader.</p>
 			<h1>Find me on...</h1>
 			<ul id=find-me-on>
@@ -43,7 +46,7 @@
 		<p>&copy; Tim G. Thomas</p>
 	</footer>
 	<script src=https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js></script>
-	<script src='@Url.Content("~/Content/js/prettify.js")'></script>
+	<script src='@Url.Content("~/Content/js/prettify.min.js")'></script>
 	<script>
 		(function($) {
 			$('pre').addClass('prettyprint');
