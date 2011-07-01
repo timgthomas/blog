@@ -10,7 +10,8 @@ namespace Blog.Web
 		{
 			GlobalFilters.Filters.Add(new HandleErrorAttribute());
 
-			RouteTable.Routes.MapRoute("Default", "{action}", new { controller = "Site", action = "Index" });
+			RouteTable.Routes.MapRoute("Default", "", new { controller = "Site", action = "Index" });
+			RouteTable.Routes.MapRoute("Post", "{slug}", new { controller = "Site", action = "Post" });
 		}
 	}
 }

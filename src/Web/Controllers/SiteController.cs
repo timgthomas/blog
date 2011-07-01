@@ -22,5 +22,11 @@ namespace Blog.Web.Controllers
 		{
 			return View(Posts.GetBySlug(slug));
 		}
+
+		public ViewResult Rss()
+		{
+			Response.ContentType = "application/rss+xml";
+			return View(Posts.GetAll());
+		}
 	}
 }

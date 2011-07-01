@@ -1,0 +1,22 @@
+﻿@{ Layout = null; }
+@model IEnumerable<Post>
+<rss version="2.0">
+	<channel>
+		<title>Tim G. Thomas</title>
+		<link>http://www.timgthomas.com</link>
+		<description>Blog entry feed for Tim G. Thomas</description>
+		<lastBuildDate>@Model.First().Posted.ToUniversalTime().ToString("r")</lastBuildDate>
+		<language>en-us</language>
+		@foreach (Post post in ViewData.Model) {
+			<item>
+				<title>@Html.Raw(post.Title)</title>
+				@if (!string.IsNullOrWhiteSpace(post.Slug)) {
+					<link>http://@(Request.Url.Host + Url.Action("Post", new { slug = post.Slug }))</link>
+				}
+				<guid>@post.Title.GetHashCode()</guid>
+				<pubDate>@post.Posted.ToUniversalTime().ToString("r")</pubDate>
+				<description>@post.Body</description>
+			</item>
+		}
+	</channel>
+</rss>
