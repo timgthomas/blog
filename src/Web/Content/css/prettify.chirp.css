@@ -45,6 +45,7 @@ pre.prettyprint {
 }
 pre.prettyprint span {
 	font-family: 'Bitstream Vera Sans Mono', Monaco, Consolas, 'Courier New';
+	line-height: 1.25em;
 }
 
 .ie pre.prettyprint {
