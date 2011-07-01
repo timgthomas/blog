@@ -11,6 +11,7 @@ namespace Blog.Web
 			GlobalFilters.Filters.Add(new HandleErrorAttribute());
 
 			RouteTable.Routes.MapRoute("Default", "", new { controller = "Site", action = "Index" });
+			RouteTable.Routes.MapRoute("Rss", "rss", new { controller = "Site", action = "Rss" });
 			RouteTable.Routes.MapRoute("Post", "{slug}", new { controller = "Site", action = "Post" });
 		}
 	}
