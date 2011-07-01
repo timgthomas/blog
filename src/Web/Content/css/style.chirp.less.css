@@ -107,7 +107,7 @@ nav a {
 	text-align: justify;
 }
 
-#content a {
+#content a, aside a {
 	color: lightness(@foreground, -12.5%);
 
 	-moz-transition-property: color;
@@ -116,7 +116,7 @@ nav a {
 	-webkit-transition-property: color;
 	-webkit-transition-duration: 0.25s;
 }
-#content a:hover {
+#content a:hover, aside a:hover {
 	color: @foreground-highlight;
 	
 	-moz-transition-property: color;
@@ -150,7 +150,7 @@ nav a {
 /* Content : Posts */
 .post {
 	list-style-type: none;
-	margin-bottom: 30px;
+	margin: 15px 0;
 }
 
 .post header h1 a {
@@ -167,7 +167,8 @@ nav a {
 
 .post > footer {
 	border-top: 2px solid @foreground;
-	font-size: 0.75em;
+	font-size: 0.85em;
+	padding: 5px 0 0;
 }
 
 /* Sidebar */
@@ -188,8 +189,10 @@ aside h1 {
 }
 
 aside p {
+	clear: both;
 	font-size: 1.125em;
-	text-align: justify;
+	padding: 10px 0 0;
+	text-align: center;
 }
 
 aside ul {
@@ -233,6 +236,7 @@ aside ul .forrst { background-image: url('../img/icons/forrst.png'); }
 body > footer p {
 	color: @footer-foreground;
 	font-size: 1.5em;
+	margin: 0 0 15px;
 	text-align: center;
 }
 

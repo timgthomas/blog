@@ -13,19 +13,19 @@ nav ol li{float:left;list-style-type:none}
 nav a{display:block;height:30px;margin:0 10px}
 #content{margin-right:250px}
 #content p{font-size:1.75em;line-height:1.5em;margin:0 0 15px;text-align:justify}
-#content a{color:#c2b176;-moz-transition-property:color;-moz-transition-duration:.25s;-webkit-transition-property:color;-webkit-transition-duration:.25s}
-#content a:hover{color:#eae3ce;-moz-transition-property:color;-moz-transition-duration:.25s;-webkit-transition-property:color;-webkit-transition-duration:.25s}
+#content a,aside a{color:#c2b176;-moz-transition-property:color;-moz-transition-duration:.25s;-webkit-transition-property:color;-webkit-transition-duration:.25s}
+#content a:hover,aside a:hover{color:#eae3ce;-moz-transition-property:color;-moz-transition-duration:.25s;-webkit-transition-property:color;-webkit-transition-duration:.25s}
 #content header{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:2px solid #d6caa2;height:20px;margin:0 0 10px;text-shadow:0 2px 0 #515b51}
 #content header h1{float:left;font-size:2.0em}
 #content header h1 a{color:#d6caa2}
 #content header h2{float:right}
-.post{list-style-type:none;margin-bottom:30px}
+.post{list-style-type:none;margin:15px 0}
 .post header h1 a{text-decoration:none}
 .post>h1{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:1px solid #d6caa2;font-size:1.75em;margin:0 0 5px}
-.post>footer{border-top:2px solid #d6caa2;font-size:.75em}
+.post>footer{border-top:2px solid #d6caa2;font-size:.85em;padding:5px 0 0}
 aside{float:right;font-size:1.4em;line-height:1.65em;width:230px}
 aside h1{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:2px solid #d6caa2;font-size:1.25em;margin:10px 0 0}
-aside p{font-size:1.125em;text-align:justify}
+aside p{clear:both;font-size:1.125em;padding:10px 0 0;text-align:center}
 aside ul{list-style-type:none;margin:0 auto;width:160px}
 aside ul li{float:left}
 aside ul li a{background-position:center center;background-repeat:no-repeat;border:1px solid #5d685d;border-radius:4px;color:#d6caa2;display:block;font-size:1.125em;height:28px;margin:5px 5px 0 0;padding:2px;text-decoration:none;width:28px}
@@ -34,7 +34,7 @@ aside ul .twitter{background-image:url('../img/icons/twitter.png')}
 aside ul .linkedin{background-image:url('../img/icons/linkedin.png')}
 aside ul .github{background-image:url('../img/icons/github.png')}
 aside ul .forrst{background-image:url('../img/icons/forrst.png')}
-body>footer p{color:#7c8a7c;font-size:1.5em;text-align:center}
+body>footer p{color:#7c8a7c;font-size:1.5em;margin:0 0 15px;text-align:center}
 body>footer a{border-bottom:1px dotted #7c8a7c;color:#7c8a7c;text-decoration:none}
 body>footer a:hover{border-bottom-style:solid}
 .container{margin:0 auto;min-width:800px;width:55%}
