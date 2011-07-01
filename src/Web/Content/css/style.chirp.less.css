@@ -201,7 +201,6 @@ aside p {
 aside ul {
 	list-style-type: none;
 	margin: 5px auto 0;
-	width: 200px;
 }
 
 aside ul li {
@@ -218,7 +217,7 @@ aside ul li {
 		font-size: 1.125em;
 		height: 28px;
 		margin: 5px 2px;
-		padding: 8px;
+		padding: 6px;
 		text-decoration: none;
 		width: 28px;
 	}
@@ -229,6 +228,7 @@ aside ul li {
 	}
 }
 
+aside ul .rss { background-image: url('../img/icons/rss.png'); }
 aside ul .twitter { background-image: url('../img/icons/twitter.png'); }
 aside ul .linkedin { background-image: url('../img/icons/linkedin.png'); }
 aside ul .github { background-image: url('../img/icons/github.png'); }

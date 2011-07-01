@@ -160,7 +160,6 @@ aside p {
 aside ul {
   list-style-type: none;
   margin: 5px auto 0;
-  width: 200px;
 }
 aside ul li {
   float: left;
@@ -176,13 +175,16 @@ aside ul li a {
   font-size: 1.125em;
   height: 28px;
   margin: 5px 2px;
-  padding: 8px;
+  padding: 6px;
   text-decoration: none;
   width: 28px;
 }
 aside ul li a:hover {
   background-color: #5d685d;
   box-shadow: none;
+}
+aside ul .rss {
+  background-image: url('../img/icons/rss.png');
 }
 aside ul .twitter {
   background-image: url('../img/icons/twitter.png');

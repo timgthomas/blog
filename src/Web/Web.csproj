@@ -72,6 +72,7 @@
     <Content Include="Content\img\icons\forrst.png" />
     <Content Include="Content\img\icons\github.png" />
     <Content Include="Content\img\icons\linkedin.png" />
+    <Content Include="Content\img\icons\rss.png" />
     <Content Include="Content\img\icons\twitter.png" />
     <Content Include="Content\img\photo.jpg" />
     <Content Include="Content\js\html5.min.js" />
