@@ -37,7 +37,7 @@ namespace Infrastructure
 			{
 				Title = "Breaking Your Old HTML Habits",
 				Slug = "breaking-your-old-html-habits",
-				Posted = new DateTime(2011, 07, 01, 3, 00, 00)
+				Posted = new DateTime(2011, 07, 01, 14, 51, 24)
 			});
 		}
 

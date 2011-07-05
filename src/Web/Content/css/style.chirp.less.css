@@ -141,6 +141,15 @@ nav a {
 	}
 }
 
+#content > h1 {
+	.title-font();
+	
+	border-bottom: 2px solid @foreground;
+	font-size: 2.0em;
+	margin: 15px 0 10px;
+	text-shadow: 0 2px 0 @midground;
+}
+
 /* Content : Posts */
 .post {
 	list-style-type: none;

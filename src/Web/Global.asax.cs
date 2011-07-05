@@ -14,5 +14,10 @@ namespace Blog.Web
 			RouteTable.Routes.MapRoute("Rss", "rss", new { controller = "Site", action = "Rss" });
 			RouteTable.Routes.MapRoute("Post", "{slug}", new { controller = "Site", action = "Post" });
 		}
+
+		protected void Application_Error()
+		{
+			Session["last-error"] = Server.GetLastError();
+		}
 	}
 }

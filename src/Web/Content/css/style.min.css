@@ -19,6 +19,7 @@ nav a{display:block;height:30px;margin:0 10px}
 #content header h1{float:left;font-size:2.0em}
 #content header h1 a{color:#d6caa2}
 #content header h2{float:right}
+#content>h1{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:2px solid #d6caa2;font-size:2.0em;margin:15px 0 10px;text-shadow:0 2px 0 #515b51}
 .post{list-style-type:none;margin:15px 0}
 .post header h1 a{text-decoration:none}
 .post>h1{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;border-bottom:1px solid #d6caa2;font-size:1.75em;margin:0 0 5px}
