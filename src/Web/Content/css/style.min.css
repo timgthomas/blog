@@ -4,6 +4,8 @@
 a{-moz-transition:all .25s ease;-o-transition:all .25s ease;-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transition:all .25s ease}
 a:hover{-moz-transition:all .25s ease;-o-transition:all .25s ease;-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transition:all .25s ease}
 body{background:#515b51 url(../img/background.gif);color:#d6caa2;font-family:Garamond;font-size:62.5%;margin:0}
+code{font-family:'Bitstream Vera Sans Mono',Monaco,Consolas,'Courier New';font-size:.75em}
+em{font-style:italic}
 body>header{font-family:'Philosopher',Arial,Serif;text-transform:lowercase;background-color:#3c4a3c;border-bottom:2px solid #d6caa2;height:30px;margin:0 0 10px;padding:50px 0 0;letter-spacing:.2em;text-shadow:0 2px 0 #3c4a3c}
 body>header h1{float:left;font-size:3.0em;height:30px;margin:0}
 body>header a{color:#d6caa2;text-decoration:none}

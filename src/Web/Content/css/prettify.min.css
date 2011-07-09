@@ -20,6 +20,6 @@
 .atv{color:#060}
 }
 pre.prettyprint{background-color:#151719;border-radius:3px;box-shadow:inset 0 1px 6px #000;font-size:1.85em;font-size:.95rem;margin:0 15px 15px;overflow-x:auto;padding:10px;text-shadow:0 1px 3px #000}
-pre.prettyprint span{font-family:'Bitstream Vera Sans Mono',Monaco,Consolas,'Courier New';line-height:1.25em}
+pre.prettyprint span{font-family:'Bitstream Vera Sans Mono',Monaco,Consolas,'Courier New';font-size:1.35em;line-height:1.25em}
 .ie pre.prettyprint{font-size:15px}
 ol.linenums{margin:0}

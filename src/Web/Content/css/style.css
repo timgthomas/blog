@@ -36,6 +36,13 @@ body {
   font-size: 62.5%;
   margin: 0;
 }
+code {
+  font-family: 'Bitstream Vera Sans Mono', Monaco, Consolas, 'Courier New';
+  font-size: 0.75em;
+}
+em {
+  font-style: italic;
+}
 /* Header */
 body > header {
   font-family: 'Philosopher', Arial, Serif;
