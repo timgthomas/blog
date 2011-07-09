@@ -4,20 +4,33 @@
   font-family: 'Philosopher', Arial, Serif;
   text-transform: lowercase;
 }
+.transition {
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
 * {
   margin: 0;
   padding: 0;
 }
 a {
-  -moz-transition: all 0.25s ease 0s;
-  -webkit-transition: all 0.25s ease 0s;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 a:hover {
-  -moz-transition: all 0.25s ease 0s;
-  -webkit-transition: all 0.25s ease 0s;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 body {
-  background-color: #515b51;
+  background: #515b51 url(../img/background.gif);
   color: #d6caa2;
   font-family: Garamond;
   font-size: 62.5%;
@@ -79,17 +92,19 @@ nav a {
 }
 #content a, aside a {
   color: #c2b176;
-  -moz-transition-property: color;
-  -moz-transition-duration: 0.25s;
-  -webkit-transition-property: color;
-  -webkit-transition-duration: 0.25s;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #content a:hover, aside a:hover {
   color: #eae3ce;
-  -moz-transition-property: color;
-  -moz-transition-duration: 0.25s;
-  -webkit-transition-property: color;
-  -webkit-transition-duration: 0.25s;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 #content header {
   font-family: 'Philosopher', Arial, Serif;
@@ -146,6 +161,7 @@ aside {
 }
 aside .photo {
   background-image: url(../img/photo.jpg);
+  border: 1px solid #3c4a3c;
   border-radius: 3px;
   box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.3);
   height: 225px;
@@ -175,7 +191,7 @@ aside ul li {
 aside ul li a {
   background-position: center center;
   background-repeat: no-repeat;
-  border: 1px solid #5d685d;
+  border: 1px solid #3c4a3c;
   border-radius: 4px;
   box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.3);
   color: #d6caa2;
@@ -186,10 +202,19 @@ aside ul li a {
   padding: 6px;
   text-decoration: none;
   width: 28px;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 aside ul li a:hover {
-  background-color: #5d685d;
   box-shadow: none;
+  -moz-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 aside ul .rss {
   background-image: url('../img/icons/rss.png');
