@@ -181,6 +181,12 @@ nav a {
 	padding: 5px 0 0;
 }
 
+.post > p > img {
+	border-radius: 3px;
+	box-shadow: inset 0 1px 6px #000;
+	margin: 0 15px;
+}
+
 /* Sidebar */
 
 aside {

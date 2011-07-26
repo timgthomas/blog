@@ -23,7 +23,7 @@ namespace Infrastructure
 
 		public IEnumerable<Post> GetAll()
 		{
-			return GetStubPosts().OrderByDescending(p => p.Posted);
+			return GetStubPosts().Where(p => p.IsActive).OrderByDescending(p => p.Posted);
 		}
 
 		public Post GetBySlug(string slug)
@@ -37,7 +37,15 @@ namespace Infrastructure
 			{
 				Title = "Breaking Your Old HTML Habits",
 				Slug = "breaking-your-old-html-habits",
-				Posted = new DateTime(2011, 07, 01, 14, 51, 24)
+				Posted = new DateTime(2011, 07, 01, 14, 51, 24),
+				IsActive = true
+			});
+
+			yield return Transform(new Post
+			{
+				Title = "Simple Validation Visuals for Windows Phone 7",
+				Slug = "simple-validation-visuals-for-windows-phone-7",
+				Posted = new DateTime(2011, 07, 25, 18, 13, 36)
 			});
 		}
 
