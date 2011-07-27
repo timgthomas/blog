@@ -1,5 +1,8 @@
 ﻿@model Post
 
+@if (!Model.IsActive) {
+	<p style="background:#D6CAA2;border-radius:3px;color:#333;padding:6px;text-align:center">Ssh! You're looking at an unpublished blog post. Don't tell anyone! :-)</p>
+}
 <section class=post>
 	<header>
 		<h1>@Model.Title</h1>

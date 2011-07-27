@@ -81,6 +81,8 @@
     <Content Include="Content\js\prettify.min.js">
       <DependentUpon>prettify.chirp.js</DependentUpon>
     </Content>
+    <Content Include="Content\posts\img\simple-validation-visuals-for-windows-phone-7_01.png" />
+    <Content Include="Content\posts\simple-validation-visuals-for-windows-phone-7.md" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
@@ -127,7 +129,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>5123</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

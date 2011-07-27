@@ -8,5 +8,6 @@ namespace Blog.Core.Models
 		public string Slug { get; set; }
 		public DateTime Posted { get; set; }
 		public string Body { get; set; }
+		public bool IsActive { get; set; }
 	}
 }
