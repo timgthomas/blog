@@ -1,6 +1,19 @@
-﻿In the Windows Phone 7 app I'm working on, I'd like to provide some visual feedback for invalid input fields by outlining each one with the user's [selected accent color][1]. Unfortunately, WP7's template-based styling model makes this difficult, and the [workaround suggestions I've found][2] result in significant amounts of markup noise (not to mention adding the necessary XAML for that approach just duplicates Silverlight's internals).
+﻿In the Windows Phone 7 app I'm working on, I'd like to provide some visual
+feedback for invalid input fields by outlining each one with the user's
+[selected accent color][1]. Ideally, invalid input boxes would look something
+like this:
 
-One solution I've found to work well is to simply "stack" a pre-styled `Border` control on top of the `TextBox` you'd like to validate and control its visibility programmatically or with data binding (this example uses the former method).  The markup is very straightforward...
+![The goal.][a]
+
+Unfortunately, WP7's template-based styling model makes this difficult, and
+the [workaround suggestions I've found][2] result in significant amounts of
+markup noise (not to mention adding the necessary XAML for that approach just
+duplicates Silverlight's internals).
+
+One solution I've found to work well is to simply "stack" a pre-styled `Border`
+control on top of the `TextBox` you'd like to validate and control its
+visibility programmatically or with data binding (this example uses the former
+method). The markup is very straightforward...
 
 	<Grid>
 		<TextBox x:Name="FavoriteFood" />
@@ -34,11 +47,15 @@ One solution I've found to work well is to simply "stack" a pre-styled `Border` 
 			Visibility.Collapsed : Visibility.Visible;
 	}
 
-Note that we're taking advantage of the [built-in Windows Phone 7 style resources][3] so the user gets a customized color for their invalid fields.  The `Border` control's `IsHitTestVisible` property is set to `False` so it doesn't interfere with users trying to tap in the `TextBox`, and we're keeping the `Border` invisible until which time that the input field is validated.
+Note that we're taking advantage of the [built-in Windows Phone 7 style
+resources][3] so the user gets a customized color for their invalid fields. The
+`Border` control's `IsHitTestVisible` property is set to `False` so it doesn't
+interfere with users trying to tap in the `TextBox`, and we're keeping the
+`Border` invisible until the input field is validated.
 
 The end result looks something like this:
 
-![The end result.][a]
+![The end result.][b]
 
 Happy validating!
 
@@ -46,3 +63,4 @@ Happy validating!
 [2]: http://stackoverflow.com/questions/4706619/windows-phone-7-borderbrush-can-only-be-set-once
 [3]: http://msdn.microsoft.com/en-us/library/ff769552%28v=VS.92%29.aspx
 [a]: Content/posts/img/simple-validation-visuals-for-windows-phone-7_01.png
+[b]: Content/posts/img/simple-validation-visuals-for-windows-phone-7_02.png

@@ -82,6 +82,7 @@
       <DependentUpon>prettify.chirp.js</DependentUpon>
     </Content>
     <Content Include="Content\posts\img\simple-validation-visuals-for-windows-phone-7_01.png" />
+    <Content Include="Content\posts\img\simple-validation-visuals-for-windows-phone-7_02.png" />
     <Content Include="Content\posts\simple-validation-visuals-for-windows-phone-7.md" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

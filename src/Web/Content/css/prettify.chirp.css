@@ -17,19 +17,6 @@
 	.fun { color: red }  /* a function name */
 }
 
-/* Use higher contrast and text-weight for printable form. */
-/*@media print, projection {
-	.str { color: #060 }
-	.kwd { color: #006; font-weight: bold }
-	.com { color: #600; font-style: italic }
-	.typ { color: #404; font-weight: bold }
-	.lit { color: #044 }
-	.pun, .opn, .clo { color: #440 }
-	.tag { color: #006; font-weight: bold }
-	.atn { color: #404 }
-	.atv { color: #060 }
-}*/
-
 pre.prettyprint {
 	background-color: rgb(21, 23, 25);
 	border-radius: 3px;
@@ -47,23 +34,6 @@ pre.prettyprint span {
 	line-height: 1.25em;
 }
 
-.ie pre.prettyprint {
-	font-size: 15px;
-}
+.ie pre.prettyprint { font-size: 15px; }
 
-/* Specify class=linenums on a pre to get line numbering */
-ol.linenums { margin: 0; } /* IE indents via margin-left */
-/*li.L0,
-li.L1,
-li.L2,
-li.L3,
-li.L5,
-li.L6,
-li.L7,
-li.L8 { list-style-type: none }*/
-/* Alternate shading for lines */
-/*li.L1,
-li.L3,
-li.L5,
-li.L7,
-li.L9 { background: #eee }*/
+ol.linenums { margin: 0; }
