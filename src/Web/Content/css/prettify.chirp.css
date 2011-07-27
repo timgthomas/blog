@@ -1,37 +1,35 @@
 /* Pretty printing styles. Used with prettify.js. */
 
-/* SPAN elements with the classes below are added by prettyprint. */
 .pln { color: rgb(230, 222, 184); }  /* plain text */
 
 @media screen {
-  .str { color: rgb(106, 128, 140); }  /* string content */
-  .kwd { color: rgb(179, 165, 125); }  /* a keyword */
-  .com { color: rgb(97, 99, 102); }  /* a comment */
-  .typ { color: rgb(115, 141, 79); }  /* a type name */
-  .lit { color: rgb(106, 128, 140); }  /* a literal value */
-  /* punctuation, lisp open bracket, lisp close bracket */
-  .pun, .opn, .clo { /*color: #660*/ }
-  .tag { color: rgb(115, 141, 79); }  /* a markup tag name */
-  .atn { /*color: #606*/ }  /* a markup attribute name */
-  .atv { color: rgb(106, 128, 140); }  /* a markup attribute value */
-  .dec, .var { color: rgb(115, 141, 79); }  /* a declaration; a variable name */
-  .fun { color: red }  /* a function name */
+	.str { color: rgb(106, 128, 140); }  /* string content */
+	.kwd { color: rgb(179, 165, 125); }  /* a keyword */
+	.com { color: rgb(97, 99, 102); }  /* a comment */
+	.typ { color: rgb(115, 141, 79); }  /* a type name */
+	.lit { color: rgb(106, 128, 140); }  /* a literal value */
+	/* punctuation, lisp open bracket, lisp close bracket */
+	.pun, .opn, .clo { /*color: #660*/ }
+	.tag { color: rgb(115, 141, 79); }  /* a markup tag name */
+	.atn { /*color: #606*/ }  /* a markup attribute name */
+	.atv { color: rgb(106, 128, 140); }  /* a markup attribute value */
+	.dec, .var { color: rgb(115, 141, 79); }  /* a declaration; a variable name */
+	.fun { color: red }  /* a function name */
 }
 
 /* Use higher contrast and text-weight for printable form. */
-@media print, projection {
-  .str { color: #060 }
-  .kwd { color: #006; font-weight: bold }
-  .com { color: #600; font-style: italic }
-  .typ { color: #404; font-weight: bold }
-  .lit { color: #044 }
-  .pun, .opn, .clo { color: #440 }
-  .tag { color: #006; font-weight: bold }
-  .atn { color: #404 }
-  .atv { color: #060 }
-}
+/*@media print, projection {
+	.str { color: #060 }
+	.kwd { color: #006; font-weight: bold }
+	.com { color: #600; font-style: italic }
+	.typ { color: #404; font-weight: bold }
+	.lit { color: #044 }
+	.pun, .opn, .clo { color: #440 }
+	.tag { color: #006; font-weight: bold }
+	.atn { color: #404 }
+	.atv { color: #060 }
+}*/
 
-/* Put a border around prettyprinted code snippets. */
 pre.prettyprint {
 	background-color: rgb(21, 23, 25);
 	border-radius: 3px;
