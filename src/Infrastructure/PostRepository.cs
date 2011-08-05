@@ -45,7 +45,8 @@ namespace Infrastructure
 			{
 				Title = "Simple Validation Visuals for Windows Phone 7",
 				Slug = "simple-validation-visuals-for-windows-phone-7",
-				Posted = new DateTime(2011, 07, 25, 18, 13, 36)
+				Posted = new DateTime(2011, 08, 05, 10, 09, 03),
+				IsActive = true
 			});
 		}
 
