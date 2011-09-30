@@ -1,4 +1,4 @@
-.title-font{font-family:'Philosopher',Arial,Serif;text-transform:lowercase}
+﻿.title-font{font-family:'Philosopher',Arial,Serif;text-transform:lowercase}
 .transition{-moz-transition:all .25s ease;-o-transition:all .25s ease;-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transition:all .25s ease}
 *{margin:0;padding:0}
 a{-moz-transition:all .25s ease;-o-transition:all .25s ease;-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transition:all .25s ease}
@@ -44,7 +44,7 @@ aside ul .forrst{background-image:url('../img/icons/forrst.png')}
 body>footer p{color:#7c8a7c;font-size:1.5em;margin:0 0 15px;text-align:center}
 body>footer a{border-bottom:1px dotted #7c8a7c;color:#7c8a7c;text-decoration:none}
 body>footer a:hover{border-bottom-style:solid}
-.container{margin:0 auto;min-width:800px;width:55%}
+.container{margin:0 auto;min-width:800px;max-width:1200px;width:55%}
 .clearfix:before,.clearfix:after{content:"";display:block}
 .clearfix:after{clear:both}
 .clearfix{zoom:1}

@@ -285,6 +285,7 @@ body > footer a:hover {
 .container {
 	margin: 0 auto;
 	min-width: 800px;
+	max-width: 1200px;
 	width: 55%;
 }
 

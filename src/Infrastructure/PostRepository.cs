@@ -35,6 +35,14 @@ namespace Infrastructure
 		{
 			yield return Transform(new Post
 			{
+				Title = "Binding to a UserControl's Dependency Property",
+				Slug = "binding-to-a-usercontrols-dependency-property",
+				Posted = new DateTime(2011, 09, 30, 11, 09, 00),
+				IsActive = true
+			});
+
+			yield return Transform(new Post
+			{
 				Title = "Breaking Your Old HTML Habits",
 				Slug = "breaking-your-old-html-habits",
 				Posted = new DateTime(2011, 07, 01, 14, 51, 24),
