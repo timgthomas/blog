@@ -34,28 +34,36 @@ namespace Infrastructure
 		private IEnumerable<Post> GetStubPosts()
 		{
 			yield return Transform(new Post
-			{
-				Title = "Binding to a UserControl's Dependency Property",
-				Slug = "binding-to-a-usercontrols-dependency-property",
-				Posted = new DateTime(2011, 09, 30, 11, 09, 00),
-				IsActive = true
-			});
+				{
+					Title = "Recreating the CTXNA Button Style in Pure CSS",
+					Slug = "recreating-the-ctxna-button-style-in-pure-css",
+					Posted = new DateTime(2011, 10, 2, 16, 40, 00),
+					IsActive = true
+				});
 
 			yield return Transform(new Post
-			{
-				Title = "Breaking Your Old HTML Habits",
-				Slug = "breaking-your-old-html-habits",
-				Posted = new DateTime(2011, 07, 01, 14, 51, 24),
-				IsActive = true
-			});
+				{
+					Title = "Binding to a UserControl's Dependency Property",
+					Slug = "binding-to-a-usercontrols-dependency-property",
+					Posted = new DateTime(2011, 09, 30, 11, 09, 00),
+					IsActive = true
+				});
 
 			yield return Transform(new Post
-			{
-				Title = "Simple Validation Visuals for Windows Phone 7",
-				Slug = "simple-validation-visuals-for-windows-phone-7",
-				Posted = new DateTime(2011, 08, 05, 10, 09, 03),
-				IsActive = true
-			});
+				{
+					Title = "Breaking Your Old HTML Habits",
+					Slug = "breaking-your-old-html-habits",
+					Posted = new DateTime(2011, 07, 01, 14, 51, 24),
+					IsActive = true
+				});
+
+			yield return Transform(new Post
+				{
+					Title = "Simple Validation Visuals for Windows Phone 7",
+					Slug = "simple-validation-visuals-for-windows-phone-7",
+					Posted = new DateTime(2011, 08, 05, 10, 09, 03),
+					IsActive = true
+				});
 		}
 
 		private Post Transform(Post post)
