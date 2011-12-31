@@ -109,7 +109,7 @@ nav a {
 	margin-right: 250px;
 }
 
-#content p {
+#content > p {
 	font-size: 1.75em;
 	line-height: 1.5em;
 	margin: 0 0 15px;
@@ -161,6 +161,18 @@ nav a {
 .post {
 	list-style-type: none;
 	margin: 15px 0;
+	
+	p, ul {
+		font-size: 1.75em;
+		line-height: 1.5em;
+		margin: 0 0 15px;
+		text-align: justify;
+	}
+	
+	ul {
+		list-style: disc;
+		margin-left: 30px;
+	}
 }
 
 .post header h1 a {
@@ -311,4 +323,9 @@ body > footer a:hover {
 	.title-font();
 	
 	border-bottom: 2px solid @foreground;
+}
+
+#dsq-content #dsq-footer {
+	font-size: 1.0em;
+	margin: 15px 0 !important;
 }

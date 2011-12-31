@@ -119,6 +119,9 @@
   <ItemGroup>
     <Content Include="Content\posts\recreating-the-ctxna-button-style-in-pure-css.md" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\posts\disable-track-changes-in-sql-server-management-studio.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

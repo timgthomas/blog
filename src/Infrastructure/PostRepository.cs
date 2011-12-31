@@ -35,6 +35,14 @@ namespace Infrastructure
 		{
 			yield return Transform(new Post
 				{
+					Title = "Disable \"Track Changes\" in SQL Server Management Studio",
+					Slug = "disable-track-changes-in-sql-server-management-studio",
+					Posted = new DateTime(2011, 12, 30, 11, 50, 00),
+					IsActive = true
+				});
+
+			yield return Transform(new Post
+				{
 					Title = "Recreating the CTXNA Button Style in Pure CSS",
 					Slug = "recreating-the-ctxna-button-style-in-pure-css",
 					Posted = new DateTime(2011, 10, 2, 16, 40, 00),

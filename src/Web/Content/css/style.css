@@ -91,7 +91,7 @@ nav a {
 #content {
   margin-right: 250px;
 }
-#content p {
+#content > p {
   font-size: 1.75em;
   line-height: 1.5em;
   margin: 0 0 15px;
@@ -143,6 +143,16 @@ nav a {
 .post {
   list-style-type: none;
   margin: 15px 0;
+}
+.post p, .post ul {
+  font-size: 1.75em;
+  line-height: 1.5em;
+  margin: 0 0 15px;
+  text-align: justify;
+}
+.post ul {
+  list-style: disc;
+  margin-left: 30px;
 }
 .post header h1 a {
   text-decoration: none;
@@ -283,4 +293,8 @@ body > footer a:hover {
   font-family: 'Philosopher', Arial, Serif;
   text-transform: lowercase;
   border-bottom: 2px solid #d6caa2;
+}
+#dsq-content #dsq-footer {
+  font-size: 1.0em;
+  margin: 15px 0 !important;
 }
