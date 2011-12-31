@@ -2,7 +2,7 @@
 both Visual Studio and SQL Server Management Studio, which is designed to
 highlight lines that changed since the last save:
 
-![Management Studio with Track Changes "enabled"][a]
+![Management Studio with Track Changes 'enabled'][a]
 
 Visual Studio has an option to disable it entirely (`Tools > Options > Text
 Editor > Track changes`), but Management Studio lacks this feature. As a
@@ -14,7 +14,7 @@ workaround, you can set the "Item background" color for these two items to
 
 Changing these settings results in a pleasant absence of the "track changes" bar:
 
-![Management Studio with Track Changes "disabled"][b]
+![Management Studio with Track Changes 'disabled'][b]
 
 It's worth noting that Visual Studio's behavior is slightly different. Setting the
 colors of these two options to "Automatic" maintains the original green and yellow
