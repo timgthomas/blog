@@ -82,6 +82,8 @@
     <Content Include="Content\js\prettify.min.js">
       <DependentUpon>prettify.chirp.js</DependentUpon>
     </Content>
+    <Content Include="Content\posts\img\disable-track-changes-in-sql-server-management-studio_01.png" />
+    <Content Include="Content\posts\img\disable-track-changes-in-sql-server-management-studio_02.png" />
     <Content Include="Content\posts\img\simple-validation-visuals-for-windows-phone-7_01.png" />
     <Content Include="Content\posts\img\simple-validation-visuals-for-windows-phone-7_02.png" />
     <Content Include="Content\posts\simple-validation-visuals-for-windows-phone-7.md" />
