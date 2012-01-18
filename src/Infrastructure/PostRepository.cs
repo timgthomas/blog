@@ -35,6 +35,14 @@ namespace Infrastructure
 		{
 			yield return Transform(new Post
 				{
+					Title = "An Underscore Templates Primer",
+					Slug = "an-underscore-templates-primer",
+					Posted = new DateTime(2012, 1, 17, 20, 44, 00),
+					IsActive = true
+				});
+			
+			yield return Transform(new Post
+				{
 					Title = "Disable \"Track Changes\" in SQL Server Management Studio",
 					Slug = "disable-track-changes-in-sql-server-management-studio",
 					Posted = new DateTime(2011, 12, 30, 11, 50, 00),
