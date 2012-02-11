@@ -1,6 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using Blog.Web.Initialization;
 
 namespace Blog.Web
 {
@@ -13,6 +14,9 @@ namespace Blog.Web
 			RouteTable.Routes.MapRoute("Default", "", new { controller = "Site", action = "Index" });
 			RouteTable.Routes.MapRoute("Rss", "rss", new { controller = "Site", action = "Rss" });
 			RouteTable.Routes.MapRoute("Post", "{slug}", new { controller = "Site", action = "Post" });
+
+			var kernel = NinjectBootstrapper.Bootstrap();
+			DependencyResolver.SetResolver(new NinjectDependencyResolver(kernel));
 		}
 
 		protected void Application_Error()

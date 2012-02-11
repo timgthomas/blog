@@ -1,32 +1,31 @@
 using System.Web.Mvc;
 using Blog.Core.Services;
-using Infrastructure;
 
 namespace Blog.Web.Controllers
 {
 	public class SiteController : Controller
 	{
-		private IPostRepository _posts;
+		private readonly IPostRepository _postRepository;
 
-		private IPostRepository Posts
+		public SiteController(IPostRepository postRepository)
 		{
-			get { return _posts ?? (_posts = new PostRepository(HttpContext.Server.MapPath("~/Content/posts"))); }
+			_postRepository = postRepository;
 		}
 
 		public ViewResult Index()
 		{
-			return View(Posts.GetAll());
+			return View(_postRepository.GetAll());
 		}
 
 		public ViewResult Post(string slug)
 		{
-			return View(Posts.GetBySlug(slug));
+			return View(_postRepository.GetBySlug(slug));
 		}
 
 		public ViewResult Rss()
 		{
 			Response.ContentType = "application/rss+xml";
-			return View(Posts.GetAll());
+			return View(_postRepository.GetAll());
 		}
 	}
 }

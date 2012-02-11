@@ -10,9 +10,9 @@ namespace Infrastructure
 	{
 		private readonly IPostContentRepository _contentRepository;
 
-		public PostRepository(string rootDirectory)
+		public PostRepository(IPostContentRepository contentRepository)
 		{
-			_contentRepository = new PostContentRepository(rootDirectory);
+			_contentRepository = contentRepository;
 		}
 
 		public IEnumerable<Post> GetAll()
