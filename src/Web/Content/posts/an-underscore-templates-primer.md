@@ -38,7 +38,8 @@ application (we'll use jQuery's `ajax()` method):
 	  type: 'get',
 	  url: 'path/to/your/json'
 	}).done(function (data) {
-	  // "data" is our JSON object; we'll be working in here.
+	  // We'll use Underscore to compile our template
+	  // here using "data", our JSON collection.
 	});
 
 The Template
@@ -63,10 +64,46 @@ JavaScript).
 
 If you've worked with tools like ASP.NET "WebForms" or Rails, you may recognize
 the "bee sting" operators (`<%` and `%>`), which Underscore uses to both output
-data to the rendered template and encapsulate behavior (using JavaScript). In
-this template, we first loop through the "books" collection (which we'll define
-in the next section), pluck out each book as the loop progresses, and print out
-the title and author of each as an unordered list item.
+data to the rendered template and encapsulate behavior (as JavaScript). In this
+template, we first loop through the "books" collection (which we'll define in
+the next section), pluck out each book as the loop progresses, and print out the
+title and author of each as an unordered list item.
+
+You're free to inject as much JavaScript as you wish into your templates, but I
+find they're most maintainable when the script is kept to a minimum (for me,
+this means mostly just loops and ternary operators), like so:
+
+	<% book.published ? print('(' + book.published + ')') : '' %>
+
+(The `print()` function is a handy alternative to the `<%= %>` syntax for
+outputting values inside other functions, like we're doing here.)
+
+The Result
+==========
+
+Now that we've defined our JSON source and the template for displaying our data,
+we need simply to tell Underscore to render the template and give us back the
+output HTML (using Underscore's `template()` function).
+
+Remember that we're inside jQuery's `ajax()` method in this example, and `data`
+represents our JSON collection of books. We'll tell Underscore to put this data
+inside the `books` collection, which we've referenced in our template.
+
+	// Get the template's markup...
+	var tmplMarkup = $('#tmpl-books').html();
+	// ...tell Underscore to render the template...
+	var compiledTmpl = _.template(tmplMarkup, { books : data });
+	// ...and update part of your page:
+	$('#target').html(compiledTmpl);
+
+Underscore kindly compiles the template with our well-formed data and produces
+the following output, ready for injection into our HTML page:
+
+	<ul>
+	  <li><em>Myst: The Book of Atrus</em> by Rand Miller</li>
+	  <li><em>The Hobbit</em> by J.R.R. Tolkien</li>
+	  <li><em>Stardust</em> by Neil Gaiman</li>
+	</ul>
 
 [1]: http://api.jquery.com/category/plugins/templates/
 [2]: http://documentcloud.github.com/underscore/

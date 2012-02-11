@@ -1,24 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using Blog.Core.Models;
 using Blog.Core.Services;
-using MarkdownSharp;
 using System.Linq;
 
 namespace Infrastructure
 {
 	public class PostRepository : IPostRepository
 	{
-		private readonly Markdown _markdownTransformer;
-
-		private readonly string _rootDirectory;
+		private readonly IPostContentRepository _contentRepository;
 
 		public PostRepository(string rootDirectory)
 		{
-			_rootDirectory = rootDirectory;
-
-			_markdownTransformer = new Markdown();
+			_contentRepository = new PostContentRepository(rootDirectory);
 		}
 
 		public IEnumerable<Post> GetAll()
@@ -33,72 +27,50 @@ namespace Infrastructure
 
 		private IEnumerable<Post> GetStubPosts()
 		{
-			yield return Transform(new Post
-				{
-					Title = "An Underscore Templates Primer",
-					Slug = "an-underscore-templates-primer",
-					Posted = new DateTime(2012, 1, 17, 20, 44, 00),
-					IsActive = true
-				});
-			
-			yield return Transform(new Post
+			var post = new Post
 				{
 					Title = "Disable \"Track Changes\" in SQL Server Management Studio",
-					Slug = "disable-track-changes-in-sql-server-management-studio",
 					Posted = new DateTime(2011, 12, 30, 11, 50, 00),
 					IsActive = true
-				});
+				};
+			post.Body = _contentRepository.GetPostBody(post.Slug);
+			yield return post;
 
-			yield return Transform(new Post
+			post = new Post
 				{
 					Title = "Recreating the CTXNA Button Style in Pure CSS",
-					Slug = "recreating-the-ctxna-button-style-in-pure-css",
 					Posted = new DateTime(2011, 10, 2, 16, 40, 00),
 					IsActive = true
-				});
+				};
+			post.Body = _contentRepository.GetPostBody(post.Slug);
+			yield return post;
 
-			yield return Transform(new Post
+			post = new Post
 				{
 					Title = "Binding to a UserControl's Dependency Property",
-					Slug = "binding-to-a-usercontrols-dependency-property",
 					Posted = new DateTime(2011, 09, 30, 11, 09, 00),
 					IsActive = true
-				});
+				};
+			post.Body = _contentRepository.GetPostBody(post.Slug);
+			yield return post;
 
-			yield return Transform(new Post
+			post = new Post
 				{
 					Title = "Breaking Your Old HTML Habits",
-					Slug = "breaking-your-old-html-habits",
 					Posted = new DateTime(2011, 07, 01, 14, 51, 24),
 					IsActive = true
-				});
+				};
+			post.Body = _contentRepository.GetPostBody(post.Slug);
+			yield return post;
 
-			yield return Transform(new Post
+			post = new Post
 				{
 					Title = "Simple Validation Visuals for Windows Phone 7",
-					Slug = "simple-validation-visuals-for-windows-phone-7",
 					Posted = new DateTime(2011, 08, 05, 10, 09, 03),
 					IsActive = true
-				});
-		}
-
-		private Post Transform(Post post)
-		{
-			string fileName = Path.Combine(_rootDirectory, post.Slug + ".md");
-
-			if (!File.Exists(fileName)) return post;
-
-			string fileContents;
-
-			using (var fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.None))
-			using (var streamReader = new StreamReader(fileStream))
-			{
-				fileContents = streamReader.ReadToEnd();
-			}
-
-			post.Body = _markdownTransformer.Transform(fileContents);
-
-			return post;
+				};
+			post.Body = _contentRepository.GetPostBody(post.Slug);
+			yield return post;
 		}
 	}
 }
