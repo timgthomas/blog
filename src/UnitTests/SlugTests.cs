@@ -27,5 +27,12 @@ namespace Blog.UnitTests
 			var post = new Post { Title = "A Sample's Post" };
 			post.Slug.ShouldEqual("a-samples-post");
 		}
+
+		[Test]
+		public void Should_slugify_periods()
+		{
+			var post = new Post { Title = "A Sample. Post" };
+			post.Slug.ShouldEqual("a-sample-post");
+		}
 	}
 }

@@ -16,6 +16,7 @@ namespace Blog.Core.Models
 				.Replace(' ', '-')
 				.Replace("\"", "")
 				.Replace("'", "")
+				.Replace(".", "")
 				.ToLower();
 		}
 	}

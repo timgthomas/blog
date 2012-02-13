@@ -29,6 +29,15 @@ namespace Infrastructure
 		{
 			var post = new Post
 				{
+					Title = "Using HTML5's \"data\" Attributes with ASP.NET MVC's Input Helpers",
+					Posted = new DateTime(2012, 2, 13, 14, 31, 00),
+					IsActive = true
+				};
+			post.Body = _contentRepository.GetPostBody(post.Slug);
+			yield return post;
+
+			post = new Post
+				{
 					Title = "Disable \"Track Changes\" in SQL Server Management Studio",
 					Posted = new DateTime(2011, 12, 30, 11, 50, 00),
 					IsActive = true

@@ -133,6 +133,7 @@
   <ItemGroup>
     <None Include="Content\posts\an-underscore-templates-primer.md" />
     <Content Include="packages.config" />
+    <None Include="Content\posts\using-html5s-data-attributes-with-aspnet-mvcs-input-helpers.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
